@@ -1,10 +1,1558 @@
-2023/11/15 22:59:39 [INFO] Packer version: 1.9.4 [go1.21.0 darwin amd64]
-2023/11/15 22:59:39 [TRACE] discovering plugins in 
-2023/11/15 22:59:39 [TRACE] discovering plugins in /usr/local/bin
-2023/11/15 22:59:39 [INFO] PACKER_CONFIG env var not set; checking the default config file path
-2023/11/15 22:59:39 [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/oawoga/.packerconfig
-2023/11/15 22:59:39 [WARN] Config file doesn't exist: /Users/oawoga/.packerconfig
-2023/11/15 22:59:39 [INFO] Setting cache directory: /Users/oawoga/.cache/packer
-2023/11/15 22:59:39 1700089179,,ui,error,"../techbleat_bg/packer/packer.json": stat ../techbleat_bg/packer/packer.json: no such file or directory
-2023/11/15 22:59:39 [INFO] (telemetry) Finalizing.
-2023/11/15 22:59:39 waiting for all plugin processes to complete...
+2023/11/15 23:17:41 [INFO] Packer version: 1.9.4 [go1.21.0 darwin amd64]
+2023/11/15 23:17:41 [TRACE] discovering plugins in 
+2023/11/15 23:17:41 [TRACE] discovering plugins in /usr/local/bin
+2023/11/15 23:17:41 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/11/15 23:17:41 [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/oawoga/.packerconfig
+2023/11/15 23:17:41 [WARN] Config file doesn't exist: /Users/oawoga/.packerconfig
+2023/11/15 23:17:41 [INFO] Setting cache directory: /Users/oawoga/.cache/packer
+2023/11/15 23:17:41 1700090261,,ui,say,Warning: Bundled plugins used\n\nThis template relies on the use of plugins bundled into the Packer binary.\nThe practice of bundling external plugins into Packer will be removed in an\nupcoming version.\n\nTo remove this warning and ensure builds keep working you can install these\nexternal plugins with the 'packer plugins install' command\n\n* packer plugins install github.com/hashicorp/amazon\n\nAlternatively%!(PACKER_COMMA) if you upgrade your templates to HCL2%!(PACKER_COMMA) you can use 'packer init'\nwith a 'required_plugins' block to automatically install external plugins.\n\nYou can try HCL2 by running 'packer hcl2_upgrade\n/Users/oawoga/WORKSHOP/play/techbleat_bg/packer/packer.json'\n\n
+2023/11/15 23:17:41 [INFO] Starting internal plugin packer-builder-amazon-ebs
+2023/11/15 23:17:41 Starting plugin: /usr/local/Cellar/packer/1.9.4/libexec/bin/packer []string{"/usr/local/Cellar/packer/1.9.4/libexec/bin/packer", "plugin", "packer-builder-amazon-ebs"}
+2023/11/15 23:17:41 Waiting for RPC address for: /usr/local/Cellar/packer/1.9.4/libexec/bin/packer
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: [INFO] Packer version: 1.9.4 [go1.21.0 darwin amd64]
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/oawoga/.packerconfig
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: [WARN] Config file doesn't exist: /Users/oawoga/.packerconfig
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: [INFO] Setting cache directory: /Users/oawoga/.cache/packer
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: args: []string{"packer-builder-amazon-ebs"}
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: Plugin address: unix /var/folders/xl/blrf_kd11yjbhk2j88gvs8v80000gn/T/packer-plugin2408186441
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: Waiting for connection...
+2023/11/15 23:17:41 Received unix RPC address for /usr/local/Cellar/packer/1.9.4/libexec/bin/packer: addr is /var/folders/xl/blrf_kd11yjbhk2j88gvs8v80000gn/T/packer-plugin2408186441
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: Serving a plugin connection...
+2023/11/15 23:17:41 [INFO] Starting internal plugin packer-provisioner-shell
+2023/11/15 23:17:41 Starting plugin: /usr/local/Cellar/packer/1.9.4/libexec/bin/packer []string{"/usr/local/Cellar/packer/1.9.4/libexec/bin/packer", "plugin", "packer-provisioner-shell"}
+2023/11/15 23:17:41 Waiting for RPC address for: /usr/local/Cellar/packer/1.9.4/libexec/bin/packer
+2023/11/15 23:17:41 packer-provisioner-shell plugin: [INFO] Packer version: 1.9.4 [go1.21.0 darwin amd64]
+2023/11/15 23:17:41 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/11/15 23:17:41 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/oawoga/.packerconfig
+2023/11/15 23:17:41 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /Users/oawoga/.packerconfig
+2023/11/15 23:17:41 packer-provisioner-shell plugin: [INFO] Setting cache directory: /Users/oawoga/.cache/packer
+2023/11/15 23:17:41 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2023/11/15 23:17:41 packer-provisioner-shell plugin: Plugin address: unix /var/folders/xl/blrf_kd11yjbhk2j88gvs8v80000gn/T/packer-plugin3656946284
+2023/11/15 23:17:41 packer-provisioner-shell plugin: Waiting for connection...
+2023/11/15 23:17:41 Received unix RPC address for /usr/local/Cellar/packer/1.9.4/libexec/bin/packer: addr is /var/folders/xl/blrf_kd11yjbhk2j88gvs8v80000gn/T/packer-plugin3656946284
+2023/11/15 23:17:41 packer-provisioner-shell plugin: Serving a plugin connection...
+2023/11/15 23:17:41 Preparing build: amazon-ebs
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: [INFO] (aws): No AWS timeout and polling overrides have been set. Packer will default to waiter-specific delays and timeouts. If you would like to customize the length of time between retries and max number of retries you may do so by setting the environment variables AWS_POLL_DELAY_SECONDS and AWS_MAX_ATTEMPTS or the configuration options aws_polling_delay_seconds and aws_polling_max_attempts to your desired values.
+2023/11/15 23:17:41 Build debug mode: false
+2023/11/15 23:17:41 Force build: false
+2023/11/15 23:17:41 On error: 
+2023/11/15 23:17:41 Waiting on builds to complete...
+2023/11/15 23:17:41 Starting build run: amazon-ebs
+2023/11/15 23:17:41 Running builder: amazon-ebs
+2023/11/15 23:17:41 [INFO] (telemetry) Starting builder amazon-ebs
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: Found region eu-west-1
+2023/11/15 23:17:41 packer-builder-amazon-ebs plugin: [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2023/11/15 23:17:41 1700090261,,ui,say,==> amazon-ebs: Prevalidating any provided VPC information
+2023/11/15 23:17:41 1700090261,,ui,say,==> amazon-ebs: Prevalidating AMI Name: packer_nginx 1700090261
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin: Using AMI Filters {
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:   Filters: [{
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:       Name: "virtualization-type",
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:       Values: ["hvm"]
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:     },{
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:       Name: "name",
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:       Values: ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:     },{
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:       Name: "root-device-type",
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:       Values: ["ebs"]
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:     }],
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin:   Owners: ["099720109477"]
+2023/11/15 23:17:42 packer-builder-amazon-ebs plugin: }
+2023/11/15 23:17:42 1700090262,,ui,message,    amazon-ebs: Found Image ID: ami-0e42de9d667b232f7
+2023/11/15 23:17:42 1700090262,,ui,say,==> amazon-ebs: Creating temporary keypair: packer_65555195-9ee2-9013-8ce6-23e8bcf883bd
+2023/11/15 23:17:42 1700090262,,ui,say,==> amazon-ebs: Creating temporary security group for this instance: packer_65555196-0e1f-8d41-39f2-fe86f202be9b
+2023/11/15 23:17:43 packer-builder-amazon-ebs plugin: [DEBUG] Waiting for temporary security group: sg-0087a11888882f834
+2023/11/15 23:17:43 packer-builder-amazon-ebs plugin: [DEBUG] Found security group sg-0087a11888882f834
+2023/11/15 23:17:43 1700090263,,ui,say,==> amazon-ebs: Authorizing access to port 22 from [0.0.0.0/0] in the temporary security groups...
+2023/11/15 23:17:43 1700090263,,ui,say,==> amazon-ebs: Launching a source AWS instance...
+2023/11/15 23:17:45 1700090265,,ui,message,    amazon-ebs: Instance ID: i-099604e51f06468c2
+2023/11/15 23:17:45 1700090265,,ui,say,==> amazon-ebs: Waiting for instance (i-099604e51f06468c2) to become ready...
+2023/11/15 23:18:31 packer-builder-amazon-ebs plugin: [INFO] Not using winrm communicator, skipping get password...
+2023/11/15 23:18:31 1700090311,,ui,say,==> amazon-ebs: Using SSH communicator to connect: 3.252.100.187
+2023/11/15 23:18:31 packer-builder-amazon-ebs plugin: [INFO] Waiting for SSH, up to timeout: 5m0s
+2023/11/15 23:18:31 1700090311,,ui,say,==> amazon-ebs: Waiting for SSH to become available...
+2023/11/15 23:18:31 packer-builder-amazon-ebs plugin: Using host value: 3.252.100.187
+2023/11/15 23:18:34 packer-builder-amazon-ebs plugin: [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.252.100.187:22: connect: connection refused
+2023/11/15 23:18:39 packer-builder-amazon-ebs plugin: Using host value: 3.252.100.187
+2023/11/15 23:18:39 packer-builder-amazon-ebs plugin: [INFO] Attempting SSH connection to 3.252.100.187:22...
+2023/11/15 23:18:39 packer-builder-amazon-ebs plugin: [DEBUG] reconnecting to TCP connection for SSH
+2023/11/15 23:18:39 packer-builder-amazon-ebs plugin: [DEBUG] handshaking with SSH
+2023/11/15 23:18:39 packer-builder-amazon-ebs plugin: [DEBUG] handshake complete!
+2023/11/15 23:18:39 packer-builder-amazon-ebs plugin: [DEBUG] Opening new ssh session
+2023/11/15 23:18:41 packer-builder-amazon-ebs plugin: [INFO] agent forwarding enabled
+2023/11/15 23:18:41 1700090321,,ui,say,==> amazon-ebs: Connected to SSH!
+2023/11/15 23:18:41 packer-builder-amazon-ebs plugin: Running the provision hook
+2023/11/15 23:18:41 [INFO] (telemetry) Starting provisioner shell
+2023/11/15 23:18:41 1700090321,,ui,say,==> amazon-ebs: Pausing 10s before the next provisioner...
+2023/11/15 23:18:51 1700090331,,ui,say,==> amazon-ebs: Provisioning with shell script: ../techbleat_bg/packer/scripts/install_software.sh
+2023/11/15 23:18:51 packer-provisioner-shell plugin: Opening ../techbleat_bg/packer/scripts/install_software.sh for reading
+2023/11/15 23:18:51 packer-builder-amazon-ebs plugin: [DEBUG] Opening new ssh session
+2023/11/15 23:18:51 packer-provisioner-shell plugin: [INFO] 1229 bytes written for 'uploadData'
+2023/11/15 23:18:51 [INFO] 1229 bytes written for 'uploadData'
+2023/11/15 23:18:51 packer-builder-amazon-ebs plugin: [DEBUG] Starting remote scp process:  scp -vt /tmp
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] Started SCP session, beginning transfers...
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] Copying input data into temporary file so we can read the length
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] scp: Uploading script_2514.sh: perms=C0644 size=1229
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] SCP session complete, closing stdin pipe.
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] Waiting for SSH session to complete.
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] scp stderr (length 32): Sink: C0644 1229 script_2514.sh
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] Opening new ssh session
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] starting remote command: chmod 0755 /tmp/script_2514.sh
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2023/11/15 23:18:52 [INFO] RPC client: Communicator ended with: 0
+2023/11/15 23:18:52 [INFO] RPC endpoint: Communicator ended with: 0
+2023/11/15 23:18:52 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] Opening new ssh session
+2023/11/15 23:18:52 packer-builder-amazon-ebs plugin: [DEBUG] starting remote command: PACKER_BUILDER_TYPE='amazon-ebs' PACKER_BUILD_NAME='amazon-ebs'  sudo -E  sh '/tmp/script_2514.sh'
+2023/11/15 23:18:52 1700090332,,ui,error,==> amazon-ebs: sh: 0: Can't open grafana_install.sh
+2023/11/15 23:18:52 1700090332,,ui,error,==> amazon-ebs: sh: 0: Can't open prometheus_install.sh
+2023/11/15 23:18:52 1700090332,,ui,message,    amazon-ebs: Reading package lists...
+2023/11/15 23:18:52 1700090332,,ui,message,    amazon-ebs: Building dependency tree...
+2023/11/15 23:18:52 1700090332,,ui,message,    amazon-ebs: Reading state information...
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Suggested packages:
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs:   zip
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: The following NEW packages will be installed:
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs:   unzip
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: 0 upgraded%!(PACKER_COMMA) 1 newly installed%!(PACKER_COMMA) 0 to remove and 0 not upgraded.
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Need to get 168 kB of archives.
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: After this operation%!(PACKER_COMMA) 567 kB of additional disk space will be used.
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Get:1 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 unzip amd64 6.0-21ubuntu1.2 [168 kB]
+2023/11/15 23:18:53 1700090333,,ui,error,==> amazon-ebs: debconf: unable to initialize frontend: Dialog
+2023/11/15 23:18:53 1700090333,,ui,error,==> amazon-ebs: debconf: (Dialog frontend will not work on a dumb terminal%!(PACKER_COMMA) an emacs shell buffer%!(PACKER_COMMA) or without a controlling terminal.)
+2023/11/15 23:18:53 1700090333,,ui,error,==> amazon-ebs: debconf: falling back to frontend: Readline
+2023/11/15 23:18:53 1700090333,,ui,error,==> amazon-ebs: debconf: unable to initialize frontend: Readline
+2023/11/15 23:18:53 1700090333,,ui,error,==> amazon-ebs: debconf: (This frontend requires a controlling tty.)
+2023/11/15 23:18:53 1700090333,,ui,error,==> amazon-ebs: debconf: falling back to frontend: Teletype
+2023/11/15 23:18:53 1700090333,,ui,error,==> amazon-ebs: dpkg-preconfigure: unable to re-open stdin:
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Fetched 168 kB in 0s (13.6 MB/s)
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Selecting previously unselected package unzip.
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: (Reading database ... 58209 files and directories currently installed.)
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Preparing to unpack .../unzip_6.0-21ubuntu1.2_amd64.deb ...
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Unpacking unzip (6.0-21ubuntu1.2) ...
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Setting up unzip (6.0-21ubuntu1.2) ...
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Processing triggers for mime-support (3.60ubuntu1) ...
+2023/11/15 23:18:53 1700090333,,ui,message,    amazon-ebs: Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+2023/11/15 23:18:54 1700090334,,ui,error,==> amazon-ebs: --2023-11-15 23:18:54--  https://github.com/hashicorp/packer-plugin-amazon/releases/download/v1.2.7/packer-plugin-amazon_v1.2.7_x5.0_linux_amd64.zip
+2023/11/15 23:18:54 1700090334,,ui,error,==> amazon-ebs: Resolving github.com (github.com)... 140.82.121.4
+2023/11/15 23:18:54 1700090334,,ui,error,==> amazon-ebs: Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+2023/11/15 23:18:54 1700090334,,ui,error,==> amazon-ebs: HTTP request sent%!(PACKER_COMMA) awaiting response... 302 Found
+2023/11/15 23:18:54 1700090334,,ui,error,==> amazon-ebs: Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/349479815/8b4ee834-aa93-4caa-87c8-2be6fdee1e47?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231115T231854Z&X-Amz-Expires=300&X-Amz-Signature=87cf20a7a520afd4363aeb2d706a82eea7171f6a812b38a6ecae24259bff9956&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=349479815&response-content-disposition=attachment%3B%20filename%3Dpacker-plugin-amazon_v1.2.7_x5.0_linux_amd64.zip&response-content-type=application%2Foctet-stream [following]
+2023/11/15 23:18:54 1700090334,,ui,error,==> amazon-ebs: --2023-11-15 23:18:54--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/349479815/8b4ee834-aa93-4caa-87c8-2be6fdee1e47?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231115T231854Z&X-Amz-Expires=300&X-Amz-Signature=87cf20a7a520afd4363aeb2d706a82eea7171f6a812b38a6ecae24259bff9956&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=349479815&response-content-disposition=attachment%3B%20filename%3Dpacker-plugin-amazon_v1.2.7_x5.0_linux_amd64.zip&response-content-type=application%2Foctet-stream
+2023/11/15 23:18:54 1700090334,,ui,error,==> amazon-ebs: Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133%!(PACKER_COMMA) 185.199.108.133%!(PACKER_COMMA) 185.199.109.133%!(PACKER_COMMA) ...
+2023/11/15 23:18:54 1700090334,,ui,error,==> amazon-ebs: Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... connected.
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: HTTP request sent%!(PACKER_COMMA) awaiting response... 200 OK
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: Length: 12330296 (12M) [application/octet-stream]
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: Saving to: ‘packer-plugin-amazon_v1.2.7_x5.0_linux_amd64.zip’
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:      0K .......... .......... .......... .......... ..........  0% 15.7M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:     50K .......... .......... .......... .......... ..........  0% 34.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    100K .......... .......... .......... .......... ..........  1% 25.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    150K .......... .......... .......... .......... ..........  1% 23.3M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    200K .......... .......... .......... .......... ..........  2% 21.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    250K .......... .......... .......... .......... ..........  2% 24.3M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    300K .......... .......... .......... .......... ..........  2% 34.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    350K .......... .......... .......... .......... ..........  3% 23.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    400K .......... .......... .......... .......... ..........  3% 28.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    450K .......... .......... .......... .......... ..........  4% 30.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    500K .......... .......... .......... .......... ..........  4%  121M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    550K .......... .......... .......... .......... ..........  4% 28.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    600K .......... .......... .......... .......... ..........  5% 31.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    650K .......... .......... .......... .......... ..........  5%  112M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    700K .......... .......... .......... .......... ..........  6%  197M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    750K .......... .......... .......... .......... ..........  6%  132M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    800K .......... .......... .......... .......... ..........  7%  168M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    850K .......... .......... .......... .......... ..........  7%  252M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    900K .......... .......... .......... .......... ..........  7%  197M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    950K .......... .......... .......... .......... ..........  8%  210M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1000K .......... .......... .......... .......... ..........  8%  176M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1050K .......... .......... .......... .......... ..........  9%  239M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1100K .......... .......... .......... .......... ..........  9%  252M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1150K .......... .......... .......... .......... ..........  9%  202M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1200K .......... .......... .......... .......... .......... 10%  204M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1250K .......... .......... .......... .......... .......... 10%  136M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1300K .......... .......... .......... .......... .......... 11% 25.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1350K .......... .......... .......... .......... .......... 11% 20.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1400K .......... .......... .......... .......... .......... 12% 24.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1450K .......... .......... .......... .......... .......... 12%  260M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1500K .......... .......... .......... .......... .......... 12%  252M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1550K .......... .......... .......... .......... .......... 13%  213M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1600K .......... .......... .......... .......... .......... 13%  218M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1650K .......... .......... .......... .......... .......... 14%  250M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1700K .......... .......... .......... .......... .......... 14%  259M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1750K .......... .......... .......... .......... .......... 14%  234M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1800K .......... .......... .......... .......... .......... 15%  255M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1850K .......... .......... .......... .......... .......... 15%  231M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1900K .......... .......... .......... .......... .......... 16%  254M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1950K .......... .......... .......... .......... .......... 16%  224M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2000K .......... .......... .......... .......... .......... 17%  262M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2050K .......... .......... .......... .......... .......... 17%  265M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2100K .......... .......... .......... .......... .......... 17%  266M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2150K .......... .......... .......... .......... .......... 18%  218M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2200K .......... .......... .......... .......... .......... 18%  265M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2250K .......... .......... .......... .......... .......... 19%  262M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2300K .......... .......... .......... .......... .......... 19%  260M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2350K .......... .......... .......... .......... .......... 19%  214M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2400K .......... .......... .......... .......... .......... 20%  255M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2450K .......... .......... .......... .......... .......... 20% 67.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2500K .......... .......... .......... .......... .......... 21%  259M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2550K .......... .......... .......... .......... .......... 21% 32.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2600K .......... .......... .......... .......... .......... 22% 13.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2650K .......... .......... .......... .......... .......... 22% 27.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2700K .......... .......... .......... .......... .......... 22% 30.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2750K .......... .......... .......... .......... .......... 23%  221M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2800K .......... .......... .......... .......... .......... 23%  133M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2850K .......... .......... .......... .......... .......... 24%  261M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2900K .......... .......... .......... .......... .......... 24%  266M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2950K .......... .......... .......... .......... .......... 24%  225M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3000K .......... .......... .......... .......... .......... 25%  185M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3050K .......... .......... .......... .......... .......... 25%  126M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3100K .......... .......... .......... .......... .......... 26%  129M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3150K .......... .......... .......... .......... .......... 26% 31.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3200K .......... .......... .......... .......... .......... 26%  262M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3250K .......... .......... .......... .......... .......... 27%  261M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3300K .......... .......... .......... .......... .......... 27%  245M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3350K .......... .......... .......... .......... .......... 28% 40.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3400K .......... .......... .......... .......... .......... 28% 19.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3450K .......... .......... .......... .......... .......... 29% 20.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3500K .......... .......... .......... .......... .......... 29% 67.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3550K .......... .......... .......... .......... .......... 29%  217M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3600K .......... .......... .......... .......... .......... 30%  265M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3650K .......... .......... .......... .......... .......... 30%  264M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3700K .......... .......... .......... .......... .......... 31%  133M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3750K .......... .......... .......... .......... .......... 31% 37.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3800K .......... .......... .......... .......... .......... 31%  246M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3850K .......... .......... .......... .......... .......... 32%  265M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3900K .......... .......... .......... .......... .......... 32%  253M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3950K .......... .......... .......... .......... .......... 33%  224M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4000K .......... .......... .......... .......... .......... 33%  253M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4050K .......... .......... .......... .......... .......... 34%  263M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4100K .......... .......... .......... .......... .......... 34%  254M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4150K .......... .......... .......... .......... .......... 34%  114M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4200K .......... .......... .......... .......... .......... 35%  189M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4250K .......... .......... .......... .......... .......... 35%  263M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4300K .......... .......... .......... .......... .......... 36%  262M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4350K .......... .......... .......... .......... .......... 36%  221M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4400K .......... .......... .......... .......... .......... 36%  249M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4450K .......... .......... .......... .......... .......... 37% 23.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4500K .......... .......... .......... .......... .......... 37% 45.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4550K .......... .......... .......... .......... .......... 38%  102M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4600K .......... .......... .......... .......... .......... 38%  265M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4650K .......... .......... .......... .......... .......... 39%  257M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4700K .......... .......... .......... .......... .......... 39%  231M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4750K .......... .......... .......... .......... .......... 39%  223M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4800K .......... .......... .......... .......... .......... 40%  220M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4850K .......... .......... .......... .......... .......... 40%  167M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4900K .......... .......... .......... .......... .......... 41%  167M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4950K .......... .......... .......... .......... .......... 41%  146M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5000K .......... .......... .......... .......... .......... 41%  263M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5050K .......... .......... .......... .......... .......... 42%  266M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5100K .......... .......... .......... .......... .......... 42%  258M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5150K .......... .......... .......... .......... .......... 43%  173M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5200K .......... .......... .......... .......... .......... 43%  110M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5250K .......... .......... .......... .......... .......... 44% 45.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5300K .......... .......... .......... .......... .......... 44% 96.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5350K .......... .......... .......... .......... .......... 44% 27.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5400K .......... .......... .......... .......... .......... 45% 44.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5450K .......... .......... .......... .......... .......... 45% 22.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5500K .......... .......... .......... .......... .......... 46% 29.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5550K .......... .......... .......... .......... .......... 46% 29.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5600K .......... .......... .......... .......... .......... 46%  172M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5650K .......... .......... .......... .......... .......... 47% 48.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5700K .......... .......... .......... .......... .......... 47%  258M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5750K .......... .......... .......... .......... .......... 48%  232M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5800K .......... .......... .......... .......... .......... 48%  265M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5850K .......... .......... .......... .......... .......... 48%  256M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5900K .......... .......... .......... .......... .......... 49%  260M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5950K .......... .......... .......... .......... .......... 49%  220M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6000K .......... .......... .......... .......... .......... 50%  266M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6050K .......... .......... .......... .......... .......... 50%  126M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6100K .......... .......... .......... .......... .......... 51%  107M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6150K .......... .......... .......... .......... .......... 51% 17.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6200K .......... .......... .......... .......... .......... 51% 70.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6250K .......... .......... .......... .......... .......... 52%  263M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6300K .......... .......... .......... .......... .......... 52%  198M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6350K .......... .......... .......... .......... .......... 53% 87.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6400K .......... .......... .......... .......... .......... 53%  208M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6450K .......... .......... .......... .......... .......... 53%  252M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6500K .......... .......... .......... .......... .......... 54%  264M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6550K .......... .......... .......... .......... .......... 54%  182M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6600K .......... .......... .......... .......... .......... 55%  177M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6650K .......... .......... .......... .......... .......... 55%  230M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6700K .......... .......... .......... .......... .......... 56%  250M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6750K .......... .......... .......... .......... .......... 56%  189M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6800K .......... .......... .......... .......... .......... 56%  264M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6850K .......... .......... .......... .......... .......... 57%  253M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6900K .......... .......... .......... .......... .......... 57%  263M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6950K .......... .......... .......... .......... .......... 58%  226M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7000K .......... .......... .......... .......... .......... 58%  261M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7050K .......... .......... .......... .......... .......... 58%  239M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7100K .......... .......... .......... .......... .......... 59%  259M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7150K .......... .......... .......... .......... .......... 59% 62.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7200K .......... .......... .......... .......... .......... 60% 47.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7250K .......... .......... .......... .......... .......... 60% 36.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7300K .......... .......... .......... .......... .......... 61% 47.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7350K .......... .......... .......... .......... .......... 61%  123M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7400K .......... .......... .......... .......... .......... 61%  255M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7450K .......... .......... .......... .......... .......... 62%  249M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7500K .......... .......... .......... .......... .......... 62%  256M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7550K .......... .......... .......... .......... .......... 63%  217M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7600K .......... .......... .......... .......... .......... 63%  246M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7650K .......... .......... .......... .......... .......... 63%  256M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7700K .......... .......... .......... .......... .......... 64%  227M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7750K .......... .......... .......... .......... .......... 64%  220M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7800K .......... .......... .......... .......... .......... 65%  258M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7850K .......... .......... .......... .......... .......... 65%  256M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7900K .......... .......... .......... .......... .......... 66%  257M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7950K .......... .......... .......... .......... .......... 66%  206M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8000K .......... .......... .......... .......... .......... 66%  256M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8050K .......... .......... .......... .......... .......... 67%  258M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8100K .......... .......... .......... .......... .......... 67% 92.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8150K .......... .......... .......... .......... .......... 68% 91.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8200K .......... .......... .......... .......... .......... 68% 19.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8250K .......... .......... .......... .......... .......... 68% 36.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8300K .......... .......... .......... .......... .......... 69% 47.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8350K .......... .......... .......... .......... .......... 69% 29.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8400K .......... .......... .......... .......... .......... 70%  120M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8450K .......... .......... .......... .......... .......... 70%  220M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8500K .......... .......... .......... .......... .......... 71%  263M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8550K .......... .......... .......... .......... .......... 71%  231M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8600K .......... .......... .......... .......... .......... 71%  237M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8650K .......... .......... .......... .......... .......... 72%  256M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8700K .......... .......... .......... .......... .......... 72%  255M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8750K .......... .......... .......... .......... .......... 73%  223M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8800K .......... .......... .......... .......... .......... 73%  264M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8850K .......... .......... .......... .......... .......... 73%  263M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8900K .......... .......... .......... .......... .......... 74%  244M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8950K .......... .......... .......... .......... .......... 74%  237M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9000K .......... .......... .......... .......... .......... 75%  263M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9050K .......... .......... .......... .......... .......... 75%  249M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9100K .......... .......... .......... .......... .......... 75%  143M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9150K .......... .......... .......... .......... .......... 76%  166M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9200K .......... .......... .......... .......... .......... 76%  255M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9250K .......... .......... .......... .......... .......... 77%  258M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9300K .......... .......... .......... .......... .......... 77%  225M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9350K .......... .......... .......... .......... .......... 78%  233M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9400K .......... .......... .......... .......... .......... 78%  246M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9450K .......... .......... .......... .......... .......... 78%  241M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9500K .......... .......... .......... .......... .......... 79%  262M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9550K .......... .......... .......... .......... .......... 79% 68.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9600K .......... .......... .......... .......... .......... 80% 36.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9650K .......... .......... .......... .......... .......... 80% 34.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9700K .......... .......... .......... .......... .......... 80% 36.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9750K .......... .......... .......... .......... .......... 81%  221M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9800K .......... .......... .......... .......... .......... 81%  262M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9850K .......... .......... .......... .......... .......... 82%  274M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9900K .......... .......... .......... .......... .......... 82%  272M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9950K .......... .......... .......... .......... .......... 83%  200M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10000K .......... .......... .......... .......... .......... 83%  264M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10050K .......... .......... .......... .......... .......... 83%  257M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10100K .......... .......... .......... .......... .......... 84%  262M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10150K .......... .......... .......... .......... .......... 84%  234M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10200K .......... .......... .......... .......... .......... 85%  260M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10250K .......... .......... .......... .......... .......... 85%  260M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10300K .......... .......... .......... .......... .......... 85%  235M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10350K .......... .......... .......... .......... .......... 86%  230M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10400K .......... .......... .......... .......... .......... 86%  271M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10450K .......... .......... .......... .......... .......... 87%  240M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10500K .......... .......... .......... .......... .......... 87%  265M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10550K .......... .......... .......... .......... .......... 88%  130M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10600K .......... .......... .......... .......... .......... 88% 67.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10650K .......... .......... .......... .......... .......... 88% 63.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10700K .......... .......... .......... .......... .......... 89% 62.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10750K .......... .......... .......... .......... .......... 89% 52.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10800K .......... .......... .......... .......... .......... 90% 29.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10850K .......... .......... .......... .......... .......... 90% 66.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10900K .......... .......... .......... .......... .......... 90%  254M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10950K .......... .......... .......... .......... .......... 91%  222M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11000K .......... .......... .......... .......... .......... 91%  260M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11050K .......... .......... .......... .......... .......... 92%  259M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11100K .......... .......... .......... .......... .......... 92%  264M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11150K .......... .......... .......... .......... .......... 93%  172M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11200K .......... .......... .......... .......... .......... 93%  251M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11250K .......... .......... .......... .......... .......... 93%  245M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11300K .......... .......... .......... .......... .......... 94%  261M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11350K .......... .......... .......... .......... .......... 94%  216M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11400K .......... .......... .......... .......... .......... 95%  101M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11450K .......... .......... .......... .......... .......... 95% 32.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11500K .......... .......... .......... .......... .......... 95% 32.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11550K .......... .......... .......... .......... .......... 96% 39.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11600K .......... .......... .......... .......... .......... 96%  236M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11650K .......... .......... .......... .......... .......... 97%  244M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11700K .......... .......... .......... .......... .......... 97%  249M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11750K .......... .......... .......... .......... .......... 97%  200M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11800K .......... .......... .......... .......... .......... 98%  234M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11850K .......... .......... .......... .......... .......... 98%  234M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11900K .......... .......... .......... .......... .......... 99%  244M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11950K .......... .......... .......... .......... .......... 99%  195M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12000K .......... .......... .......... .......... .         100%  198M=0.1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: 2023-11-15 23:18:54 (88.2 MB/s) - ‘packer-plugin-amazon_v1.2.7_x5.0_linux_amd64.zip’ saved [12330296/12330296]
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:
+2023/11/15 23:18:55 1700090335,,ui,message,    amazon-ebs: Archive:  packer-plugin-amazon_v1.2.7_x5.0_linux_amd64.zip
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: mv: cannot stat 'packer': No such file or directory
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: --2023-11-15 23:18:55--  https://releases.hashicorp.com/terraform/1.6.4/terraform_1.6.4_darwin_amd64.zip
+2023/11/15 23:18:55 1700090335,,ui,message,    amazon-ebs:   inflating: packer-plugin-amazon_v1.2.7_x5.0_linux_amd64
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: Resolving releases.hashicorp.com (releases.hashicorp.com)... 13.224.68.129%!(PACKER_COMMA) 13.224.68.28%!(PACKER_COMMA) 13.224.68.39%!(PACKER_COMMA) ...
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: Connecting to releases.hashicorp.com (releases.hashicorp.com)|13.224.68.129|:443... connected.
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: HTTP request sent%!(PACKER_COMMA) awaiting response... 200 OK
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: Length: 26709007 (25M) [application/zip]
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs: Saving to: ‘terraform_1.6.4_darwin_amd64.zip’
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:      0K .......... .......... .......... .......... ..........  0% 13.7M 2s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:     50K .......... .......... .......... .......... ..........  0% 22.8M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    100K .......... .......... .......... .......... ..........  0% 23.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    150K .......... .......... .......... .......... ..........  0%  171M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    200K .......... .......... .......... .......... ..........  0% 81.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    250K .......... .......... .......... .......... ..........  1% 40.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    300K .......... .......... .......... .......... ..........  1% 78.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    350K .......... .......... .......... .......... ..........  1%  210M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    400K .......... .......... .......... .......... ..........  1% 26.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    450K .......... .......... .......... .......... ..........  1% 22.4M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    500K .......... .......... .......... .......... ..........  2%  173M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    550K .......... .......... .......... .......... ..........  2%  145M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    600K .......... .......... .......... .......... ..........  2%  230M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    650K .......... .......... .......... .......... ..........  2%  249M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    700K .......... .......... .......... .......... ..........  2%  253M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    750K .......... .......... .......... .......... ..........  3%  203M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    800K .......... .......... .......... .......... ..........  3% 47.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    850K .......... .......... .......... .......... ..........  3% 25.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    900K .......... .......... .......... .......... ..........  3% 30.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:    950K .......... .......... .......... .......... ..........  3%  182M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1000K .......... .......... .......... .......... ..........  4% 39.4M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1050K .......... .......... .......... .......... ..........  4% 1.55M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1100K .......... .......... .......... .......... ..........  4%  179M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1150K .......... .......... .......... .......... ..........  4% 22.3M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1200K .......... .......... .......... .......... ..........  4% 22.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1250K .......... .......... .......... .......... ..........  4% 16.8M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1300K .......... .......... .......... .......... ..........  5% 34.7M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1350K .......... .......... .......... .......... ..........  5% 64.8M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1400K .......... .......... .......... .......... ..........  5% 16.0M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1450K .......... .......... .......... .......... ..........  5% 24.9M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1500K .......... .......... .......... .......... ..........  5% 32.9M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1550K .......... .......... .......... .......... ..........  6% 29.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1600K .......... .......... .......... .......... ..........  6% 93.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1650K .......... .......... .......... .......... ..........  6% 16.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1700K .......... .......... .......... .......... ..........  6% 19.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1750K .......... .......... .......... .......... ..........  6% 16.3M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1800K .......... .......... .......... .......... ..........  7%  237M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1850K .......... .......... .......... .......... ..........  7% 21.7M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1900K .......... .......... .......... .......... ..........  7% 16.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   1950K .......... .......... .......... .......... ..........  7% 33.0M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2000K .......... .......... .......... .......... ..........  7% 53.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2050K .......... .......... .......... .......... ..........  8% 42.8M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2100K .......... .......... .......... .......... ..........  8%  213M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2150K .......... .......... .......... .......... ..........  8% 36.4M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2200K .......... .......... .......... .......... ..........  8% 54.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2250K .......... .......... .......... .......... ..........  8%  242M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2300K .......... .......... .......... .......... ..........  9% 14.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2350K .......... .......... .......... .......... ..........  9%  244M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2400K .......... .......... .......... .......... ..........  9%  207M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2450K .......... .......... .......... .......... ..........  9%  127M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2500K .......... .......... .......... .......... ..........  9% 32.2M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2550K .......... .......... .......... .......... ..........  9%  200M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2600K .......... .......... .......... .......... .......... 10%  259M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2650K .......... .......... .......... .......... .......... 10% 17.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2700K .......... .......... .......... .......... .......... 10% 42.3M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2750K .......... .......... .......... .......... .......... 10%  229M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2800K .......... .......... .......... .......... .......... 10% 19.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2850K .......... .......... .......... .......... .......... 11% 90.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2900K .......... .......... .......... .......... .......... 11% 57.2M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   2950K .......... .......... .......... .......... .......... 11% 42.2M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3000K .......... .......... .......... .......... .......... 11% 40.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3050K .......... .......... .......... .......... .......... 11%  196M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3100K .......... .......... .......... .......... .......... 12% 33.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3150K .......... .......... .......... .......... .......... 12% 36.7M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3200K .......... .......... .......... .......... .......... 12%  115M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3250K .......... .......... .......... .......... .......... 12% 38.3M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3300K .......... .......... .......... .......... .......... 12%  135M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3350K .......... .......... .......... .......... .......... 13% 26.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3400K .......... .......... .......... .......... .......... 13% 33.0M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3450K .......... .......... .......... .......... .......... 13%  197M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3500K .......... .......... .......... .......... .......... 13%  244M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3550K .......... .......... .......... .......... .......... 13% 28.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3600K .......... .......... .......... .......... .......... 13% 40.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3650K .......... .......... .......... .......... .......... 14%  244M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3700K .......... .......... .......... .......... .......... 14% 31.2M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3750K .......... .......... .......... .......... .......... 14% 51.7M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3800K .......... .......... .......... .......... .......... 14% 46.0M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3850K .......... .......... .......... .......... .......... 14%  197M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3900K .......... .......... .......... .......... .......... 15% 27.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   3950K .......... .......... .......... .......... .......... 15%  118M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4000K .......... .......... .......... .......... .......... 15% 30.9M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4050K .......... .......... .......... .......... .......... 15% 52.5M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4100K .......... .......... .......... .......... .......... 15% 19.2M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4150K .......... .......... .......... .......... .......... 16%  136M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4200K .......... .......... .......... .......... .......... 16% 70.0M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4250K .......... .......... .......... .......... .......... 16% 35.4M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4300K .......... .......... .......... .......... .......... 16% 46.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4350K .......... .......... .......... .......... .......... 16% 77.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4400K .......... .......... .......... .......... .......... 17%  234M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4450K .......... .......... .......... .......... .......... 17%  192M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4500K .......... .......... .......... .......... .......... 17%  144M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4550K .......... .......... .......... .......... .......... 17%  223M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4600K .......... .......... .......... .......... .......... 17% 38.3M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4650K .......... .......... .......... .......... .......... 18% 41.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4700K .......... .......... .......... .......... .......... 18% 55.0M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4750K .......... .......... .......... .......... .......... 18%  197M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4800K .......... .......... .......... .......... .......... 18%  221M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4850K .......... .......... .......... .......... .......... 18% 23.2M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4900K .......... .......... .......... .......... .......... 18% 87.2M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   4950K .......... .......... .......... .......... .......... 19% 35.4M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5000K .......... .......... .......... .......... .......... 19% 56.2M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5050K .......... .......... .......... .......... .......... 19%  224M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5100K .......... .......... .......... .......... .......... 19% 35.9M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5150K .......... .......... .......... .......... .......... 19% 88.4M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5200K .......... .......... .......... .......... .......... 20% 17.3M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5250K .......... .......... .......... .......... .......... 20%  186M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5300K .......... .......... .......... .......... .......... 20%  130M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5350K .......... .......... .......... .......... .......... 20%  235M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5400K .......... .......... .......... .......... .......... 20% 32.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5450K .......... .......... .......... .......... .......... 21% 43.7M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5500K .......... .......... .......... .......... .......... 21%  153M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5550K .......... .......... .......... .......... .......... 21%  157M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5600K .......... .......... .......... .......... .......... 21%  110M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5650K .......... .......... .......... .......... .......... 21% 40.2M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5700K .......... .......... .......... .......... .......... 22% 59.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5750K .......... .......... .......... .......... .......... 22%  144M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5800K .......... .......... .......... .......... .......... 22%  205M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5850K .......... .......... .......... .......... .......... 22%  127M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5900K .......... .......... .......... .......... .......... 22%  114M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   5950K .......... .......... .......... .......... .......... 23% 24.6M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6000K .......... .......... .......... .......... .......... 23% 37.9M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6050K .......... .......... .......... .......... .......... 23% 45.0M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6100K .......... .......... .......... .......... .......... 23%  228M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6150K .......... .......... .......... .......... .......... 23%  149M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6200K .......... .......... .......... .......... .......... 23%  110M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6250K .......... .......... .......... .......... .......... 24% 25.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6300K .......... .......... .......... .......... .......... 24% 44.1M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6350K .......... .......... .......... .......... .......... 24%  197M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6400K .......... .......... .......... .......... .......... 24%  161M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6450K .......... .......... .......... .......... .......... 24%  176M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6500K .......... .......... .......... .......... .......... 25%  238M 1s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6550K .......... .......... .......... .......... .......... 25% 62.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6600K .......... .......... .......... .......... .......... 25% 31.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6650K .......... .......... .......... .......... .......... 25% 36.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6700K .......... .......... .......... .......... .......... 25%  146M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6750K .......... .......... .......... .......... .......... 26%  121M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6800K .......... .......... .......... .......... .......... 26%  233M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6850K .......... .......... .......... .......... .......... 26%  236M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6900K .......... .......... .......... .......... .......... 26% 39.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   6950K .......... .......... .......... .......... .......... 26% 32.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7000K .......... .......... .......... .......... .......... 27% 35.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7050K .......... .......... .......... .......... .......... 27%  159M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7100K .......... .......... .......... .......... .......... 27%  223M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7150K .......... .......... .......... .......... .......... 27% 45.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7200K .......... .......... .......... .......... .......... 27% 65.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7250K .......... .......... .......... .......... .......... 27% 52.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7300K .......... .......... .......... .......... .......... 28% 55.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7350K .......... .......... .......... .......... .......... 28% 56.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7400K .......... .......... .......... .......... .......... 28%  170M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7450K .......... .......... .......... .......... .......... 28% 44.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7500K .......... .......... .......... .......... .......... 28% 40.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7550K .......... .......... .......... .......... .......... 29% 73.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7600K .......... .......... .......... .......... .......... 29%  157M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7650K .......... .......... .......... .......... .......... 29% 47.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7700K .......... .......... .......... .......... .......... 29% 42.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7750K .......... .......... .......... .......... .......... 29% 54.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7800K .......... .......... .......... .......... .......... 30% 41.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7850K .......... .......... .......... .......... .......... 30% 17.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7900K .......... .......... .......... .......... .......... 30% 66.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   7950K .......... .......... .......... .......... .......... 30% 49.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8000K .......... .......... .......... .......... .......... 30%  244M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8050K .......... .......... .......... .......... .......... 31% 26.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8100K .......... .......... .......... .......... .......... 31%  133M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8150K .......... .......... .......... .......... .......... 31% 39.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8200K .......... .......... .......... .......... .......... 31% 36.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8250K .......... .......... .......... .......... .......... 31% 70.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8300K .......... .......... .......... .......... .......... 32% 18.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8350K .......... .......... .......... .......... .......... 32% 27.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8400K .......... .......... .......... .......... .......... 32% 43.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8450K .......... .......... .......... .......... .......... 32% 16.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8500K .......... .......... .......... .......... .......... 32% 28.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8550K .......... .......... .......... .......... .......... 32%  107M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8600K .......... .......... .......... .......... .......... 33% 32.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8650K .......... .......... .......... .......... .......... 33% 28.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8700K .......... .......... .......... .......... .......... 33% 92.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8750K .......... .......... .......... .......... .......... 33%  131M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8800K .......... .......... .......... .......... .......... 33% 26.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8850K .......... .......... .......... .......... .......... 34% 48.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8900K .......... .......... .......... .......... .......... 34%  162M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   8950K .......... .......... .......... .......... .......... 34%  179M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9000K .......... .......... .......... .......... .......... 34%  157M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9050K .......... .......... .......... .......... .......... 34% 44.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9100K .......... .......... .......... .......... .......... 35% 36.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9150K .......... .......... .......... .......... .......... 35% 62.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9200K .......... .......... .......... .......... .......... 35%  210M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9250K .......... .......... .......... .......... .......... 35% 45.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9300K .......... .......... .......... .......... .......... 35% 54.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9350K .......... .......... .......... .......... .......... 36%  211M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9400K .......... .......... .......... .......... .......... 36% 31.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9450K .......... .......... .......... .......... .......... 36% 94.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9500K .......... .......... .......... .......... .......... 36% 77.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9550K .......... .......... .......... .......... .......... 36% 74.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9600K .......... .......... .......... .......... .......... 36% 69.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9650K .......... .......... .......... .......... .......... 37% 52.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9700K .......... .......... .......... .......... .......... 37% 4.75M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9750K .......... .......... .......... .......... .......... 37% 23.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9800K .......... .......... .......... .......... .......... 37%  121M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9850K .......... .......... .......... .......... .......... 37% 15.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9900K .......... .......... .......... .......... .......... 38%  217M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:   9950K .......... .......... .......... .......... .......... 38% 40.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10000K .......... .......... .......... .......... .......... 38% 24.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10050K .......... .......... .......... .......... .......... 38% 87.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10100K .......... .......... .......... .......... .......... 38% 33.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10150K .......... .......... .......... .......... .......... 39% 52.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10200K .......... .......... .......... .......... .......... 39% 13.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10250K .......... .......... .......... .......... .......... 39%  106M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10300K .......... .......... .......... .......... .......... 39% 22.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10350K .......... .......... .......... .......... .......... 39%  100M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10400K .......... .......... .......... .......... .......... 40%  223M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10450K .......... .......... .......... .......... .......... 40% 63.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10500K .......... .......... .......... .......... .......... 40% 39.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10550K .......... .......... .......... .......... .......... 40% 20.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10600K .......... .......... .......... .......... .......... 40%  243M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10650K .......... .......... .......... .......... .......... 41% 75.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10700K .......... .......... .......... .......... .......... 41% 55.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10750K .......... .......... .......... .......... .......... 41% 34.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10800K .......... .......... .......... .......... .......... 41%  253M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10850K .......... .......... .......... .......... .......... 41%  116M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10900K .......... .......... .......... .......... .......... 41% 34.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  10950K .......... .......... .......... .......... .......... 42%  109M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11000K .......... .......... .......... .......... .......... 42% 41.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11050K .......... .......... .......... .......... .......... 42%  150M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11100K .......... .......... .......... .......... .......... 42% 36.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11150K .......... .......... .......... .......... .......... 42% 34.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11200K .......... .......... .......... .......... .......... 43% 94.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11250K .......... .......... .......... .......... .......... 43%  229M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11300K .......... .......... .......... .......... .......... 43% 50.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11350K .......... .......... .......... .......... .......... 43% 42.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11400K .......... .......... .......... .......... .......... 43%  169M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11450K .......... .......... .......... .......... .......... 44% 46.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11500K .......... .......... .......... .......... .......... 44% 36.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11550K .......... .......... .......... .......... .......... 44% 66.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11600K .......... .......... .......... .......... .......... 44% 48.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11650K .......... .......... .......... .......... .......... 44% 86.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11700K .......... .......... .......... .......... .......... 45% 27.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11750K .......... .......... .......... .......... .......... 45% 30.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11800K .......... .......... .......... .......... .......... 45%  162M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11850K .......... .......... .......... .......... .......... 45%  244M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11900K .......... .......... .......... .......... .......... 45% 38.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  11950K .......... .......... .......... .......... .......... 46% 28.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12000K .......... .......... .......... .......... .......... 46%  127M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12050K .......... .......... .......... .......... .......... 46%  194M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12100K .......... .......... .......... .......... .......... 46%  240M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12150K .......... .......... .......... .......... .......... 46% 15.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12200K .......... .......... .......... .......... .......... 46% 17.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12250K .......... .......... .......... .......... .......... 47%  213M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12300K .......... .......... .......... .......... .......... 47%  209M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12350K .......... .......... .......... .......... .......... 47% 46.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12400K .......... .......... .......... .......... .......... 47% 35.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12450K .......... .......... .......... .......... .......... 47%  253M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12500K .......... .......... .......... .......... .......... 48% 91.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12550K .......... .......... .......... .......... .......... 48% 34.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12600K .......... .......... .......... .......... .......... 48%  158M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12650K .......... .......... .......... .......... .......... 48% 20.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12700K .......... .......... .......... .......... .......... 48%  183M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12750K .......... .......... .......... .......... .......... 49% 47.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12800K .......... .......... .......... .......... .......... 49% 62.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12850K .......... .......... .......... .......... .......... 49%  225M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12900K .......... .......... .......... .......... .......... 49% 24.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  12950K .......... .......... .......... .......... .......... 49% 48.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13000K .......... .......... .......... .......... .......... 50% 92.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13050K .......... .......... .......... .......... .......... 50% 58.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13100K .......... .......... .......... .......... .......... 50%  218M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13150K .......... .......... .......... .......... .......... 50%  131M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13200K .......... .......... .......... .......... .......... 50%  142M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13250K .......... .......... .......... .......... .......... 50%  244M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13300K .......... .......... .......... .......... .......... 51%  227M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13350K .......... .......... .......... .......... .......... 51% 23.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13400K .......... .......... .......... .......... .......... 51% 34.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13450K .......... .......... .......... .......... .......... 51% 39.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13500K .......... .......... .......... .......... .......... 51%  128M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13550K .......... .......... .......... .......... .......... 52%  200M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13600K .......... .......... .......... .......... .......... 52%  224M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13650K .......... .......... .......... .......... .......... 52% 56.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13700K .......... .......... .......... .......... .......... 52% 42.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13750K .......... .......... .......... .......... .......... 52% 28.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13800K .......... .......... .......... .......... .......... 53%  172M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13850K .......... .......... .......... .......... .......... 53% 69.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13900K .......... .......... .......... .......... .......... 53% 44.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  13950K .......... .......... .......... .......... .......... 53%  204M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14000K .......... .......... .......... .......... .......... 53% 47.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14050K .......... .......... .......... .......... .......... 54% 2.97M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14100K .......... .......... .......... .......... .......... 54% 59.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14150K .......... .......... .......... .......... .......... 54% 55.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14200K .......... .......... .......... .......... .......... 54% 52.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14250K .......... .......... .......... .......... .......... 54% 32.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14300K .......... .......... .......... .......... .......... 55% 29.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14350K .......... .......... .......... .......... .......... 55% 32.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14400K .......... .......... .......... .......... .......... 55% 74.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14450K .......... .......... .......... .......... .......... 55%  143M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14500K .......... .......... .......... .......... .......... 55% 33.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14550K .......... .......... .......... .......... .......... 55% 32.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14600K .......... .......... .......... .......... .......... 56%  246M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14650K .......... .......... .......... .......... .......... 56%  159M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14700K .......... .......... .......... .......... .......... 56%  170M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14750K .......... .......... .......... .......... .......... 56%  220M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14800K .......... .......... .......... .......... .......... 56%  106M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14850K .......... .......... .......... .......... .......... 57% 31.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14900K .......... .......... .......... .......... .......... 57% 39.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  14950K .......... .......... .......... .......... .......... 57% 61.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15000K .......... .......... .......... .......... .......... 57%  233M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15050K .......... .......... .......... .......... .......... 57%  239M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15100K .......... .......... .......... .......... .......... 58% 22.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15150K .......... .......... .......... .......... .......... 58% 65.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15200K .......... .......... .......... .......... .......... 58% 56.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15250K .......... .......... .......... .......... .......... 58% 29.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15300K .......... .......... .......... .......... .......... 58% 75.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15350K .......... .......... .......... .......... .......... 59% 29.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15400K .......... .......... .......... .......... .......... 59% 58.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15450K .......... .......... .......... .......... .......... 59% 41.7M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15500K .......... .......... .......... .......... .......... 59% 76.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15550K .......... .......... .......... .......... .......... 59% 8.28M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15600K .......... .......... .......... .......... .......... 60% 17.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15650K .......... .......... .......... .......... .......... 60% 14.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15700K .......... .......... .......... .......... .......... 60% 49.1M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15750K .......... .......... .......... .......... .......... 60% 35.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15800K .......... .......... .......... .......... .......... 60% 36.9M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15850K .......... .......... .......... .......... .......... 60% 30.8M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15900K .......... .......... .......... .......... .......... 61% 15.4M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  15950K .......... .......... .......... .......... .......... 61%  131M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16000K .......... .......... .......... .......... .......... 61%  214M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16050K .......... .......... .......... .......... .......... 61% 31.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16100K .......... .......... .......... .......... .......... 61% 57.3M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16150K .......... .......... .......... .......... .......... 62%  115M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16200K .......... .......... .......... .......... .......... 62% 68.6M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16250K .......... .......... .......... .......... .......... 62% 26.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16300K .......... .......... .......... .......... .......... 62%  237M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16350K .......... .......... .......... .......... .......... 62%  111M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16400K .......... .......... .......... .......... .......... 63% 36.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16450K .......... .......... .......... .......... .......... 63% 70.2M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16500K .......... .......... .......... .......... .......... 63% 35.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16550K .......... .......... .......... .......... .......... 63% 94.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16600K .......... .......... .......... .......... .......... 63%  197M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16650K .......... .......... .......... .......... .......... 64%  204M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16700K .......... .......... .......... .......... .......... 64%  249M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16750K .......... .......... .......... .......... .......... 64% 29.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16800K .......... .......... .......... .......... .......... 64% 30.5M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16850K .......... .......... .......... .......... .......... 64%  105M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16900K .......... .......... .......... .......... .......... 64%  247M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  16950K .......... .......... .......... .......... .......... 65%  218M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  17000K .......... .......... .......... .......... .......... 65%  245M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  17050K .......... .......... .......... .......... .......... 65%  213M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  17100K .......... .......... .......... .......... .......... 65%  207M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  17150K .......... .......... .......... .......... .......... 65%  219M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  17200K .......... .......... .......... .......... .......... 66% 45.0M 0s
+2023/11/15 23:18:55 1700090335,,ui,error,==> amazon-ebs:  17250K .......... .......... .......... .......... .......... 66% 21.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17300K .......... .......... .......... .......... .......... 66% 11.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17350K .......... .......... .......... .......... .......... 66% 47.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17400K .......... .......... .......... .......... .......... 66% 84.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17450K .......... .......... .......... .......... .......... 67% 27.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17500K .......... .......... .......... .......... .......... 67% 64.8M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17550K .......... .......... .......... .......... .......... 67% 64.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17600K .......... .......... .......... .......... .......... 67% 95.6M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17650K .......... .......... .......... .......... .......... 67%  124M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17700K .......... .......... .......... .......... .......... 68% 39.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17750K .......... .......... .......... .......... .......... 68% 36.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17800K .......... .......... .......... .......... .......... 68%  150M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17850K .......... .......... .......... .......... .......... 68%  252M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17900K .......... .......... .......... .......... .......... 68% 37.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  17950K .......... .......... .......... .......... .......... 69% 23.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18000K .......... .......... .......... .......... .......... 69% 13.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18050K .......... .......... .......... .......... .......... 69% 14.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18100K .......... .......... .......... .......... .......... 69% 22.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18150K .......... .......... .......... .......... .......... 69% 21.3M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18200K .......... .......... .......... .......... .......... 69% 37.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18250K .......... .......... .......... .......... .......... 70% 30.6M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18300K .......... .......... .......... .......... .......... 70% 40.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18350K .......... .......... .......... .......... .......... 70% 34.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18400K .......... .......... .......... .......... .......... 70% 38.4M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18450K .......... .......... .......... .......... .......... 70% 23.4M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18500K .......... .......... .......... .......... .......... 71%  246M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18550K .......... .......... .......... .......... .......... 71% 44.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18600K .......... .......... .......... .......... .......... 71% 58.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18650K .......... .......... .......... .......... .......... 71%  110M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18700K .......... .......... .......... .......... .......... 71% 43.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18750K .......... .......... .......... .......... .......... 72% 68.8M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18800K .......... .......... .......... .......... .......... 72% 79.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18850K .......... .......... .......... .......... .......... 72% 79.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18900K .......... .......... .......... .......... .......... 72% 79.3M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  18950K .......... .......... .......... .......... .......... 72% 51.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19000K .......... .......... .......... .......... .......... 73% 86.6M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19050K .......... .......... .......... .......... .......... 73%  180M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19100K .......... .......... .......... .......... .......... 73%  170M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19150K .......... .......... .......... .......... .......... 73%  246M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19200K .......... .......... .......... .......... .......... 73%  254M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19250K .......... .......... .......... .......... .......... 73% 26.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19300K .......... .......... .......... .......... .......... 74% 27.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19350K .......... .......... .......... .......... .......... 74% 49.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19400K .......... .......... .......... .......... .......... 74%  238M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19450K .......... .......... .......... .......... .......... 74%  233M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19500K .......... .......... .......... .......... .......... 74%  247M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19550K .......... .......... .......... .......... .......... 75%  247M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19600K .......... .......... .......... .......... .......... 75%  229M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19650K .......... .......... .......... .......... .......... 75%  114M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19700K .......... .......... .......... .......... .......... 75% 38.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19750K .......... .......... .......... .......... .......... 75% 40.6M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19800K .......... .......... .......... .......... .......... 76% 33.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19850K .......... .......... .......... .......... .......... 76% 42.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19900K .......... .......... .......... .......... .......... 76%  180M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  19950K .......... .......... .......... .......... .......... 76%  182M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20000K .......... .......... .......... .......... .......... 76%  247M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20050K .......... .......... .......... .......... .......... 77% 23.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20100K .......... .......... .......... .......... .......... 77% 65.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20150K .......... .......... .......... .......... .......... 77% 61.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20200K .......... .......... .......... .......... .......... 77% 46.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20250K .......... .......... .......... .......... .......... 77%  141M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20300K .......... .......... .......... .......... .......... 78% 27.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20350K .......... .......... .......... .......... .......... 78%  165M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20400K .......... .......... .......... .......... .......... 78% 55.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20450K .......... .......... .......... .......... .......... 78% 36.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20500K .......... .......... .......... .......... .......... 78% 9.43M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20550K .......... .......... .......... .......... .......... 78% 53.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20600K .......... .......... .......... .......... .......... 79%  202M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20650K .......... .......... .......... .......... .......... 79%  216M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20700K .......... .......... .......... .......... .......... 79%  207M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20750K .......... .......... .......... .......... .......... 79%  237M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20800K .......... .......... .......... .......... .......... 79% 40.6M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20850K .......... .......... .......... .......... .......... 80% 27.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20900K .......... .......... .......... .......... .......... 80% 53.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  20950K .......... .......... .......... .......... .......... 80%  168M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21000K .......... .......... .......... .......... .......... 80%  231M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21050K .......... .......... .......... .......... .......... 80%  208M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21100K .......... .......... .......... .......... .......... 81%  157M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21150K .......... .......... .......... .......... .......... 81%  178M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21200K .......... .......... .......... .......... .......... 81% 20.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21250K .......... .......... .......... .......... .......... 81% 35.3M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21300K .......... .......... .......... .......... .......... 81% 25.6M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21350K .......... .......... .......... .......... .......... 82% 55.8M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21400K .......... .......... .......... .......... .......... 82% 81.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21450K .......... .......... .......... .......... .......... 82% 49.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21500K .......... .......... .......... .......... .......... 82% 44.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21550K .......... .......... .......... .......... .......... 82% 65.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21600K .......... .......... .......... .......... .......... 83%  134M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21650K .......... .......... .......... .......... .......... 83% 31.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21700K .......... .......... .......... .......... .......... 83% 51.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21750K .......... .......... .......... .......... .......... 83% 32.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21800K .......... .......... .......... .......... .......... 83% 7.48M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21850K .......... .......... .......... .......... .......... 83% 52.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21900K .......... .......... .......... .......... .......... 84%  148M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  21950K .......... .......... .......... .......... .......... 84%  266M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22000K .......... .......... .......... .......... .......... 84%  197M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22050K .......... .......... .......... .......... .......... 84% 31.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22100K .......... .......... .......... .......... .......... 84% 28.6M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22150K .......... .......... .......... .......... .......... 85%  105M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22200K .......... .......... .......... .......... .......... 85% 66.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22250K .......... .......... .......... .......... .......... 85% 26.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22300K .......... .......... .......... .......... .......... 85% 56.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22350K .......... .......... .......... .......... .......... 85% 58.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22400K .......... .......... .......... .......... .......... 86%  223M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22450K .......... .......... .......... .......... .......... 86% 96.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22500K .......... .......... .......... .......... .......... 86% 48.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22550K .......... .......... .......... .......... .......... 86% 75.4M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22600K .......... .......... .......... .......... .......... 86% 40.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22650K .......... .......... .......... .......... .......... 87%  221M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22700K .......... .......... .......... .......... .......... 87%  255M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22750K .......... .......... .......... .......... .......... 87% 37.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22800K .......... .......... .......... .......... .......... 87% 44.3M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22850K .......... .......... .......... .......... .......... 87%  244M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22900K .......... .......... .......... .......... .......... 87%  169M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  22950K .......... .......... .......... .......... .......... 88%  187M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23000K .......... .......... .......... .......... .......... 88%  231M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23050K .......... .......... .......... .......... .......... 88%  252M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23100K .......... .......... .......... .......... .......... 88% 45.4M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23150K .......... .......... .......... .......... .......... 88% 33.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23200K .......... .......... .......... .......... .......... 89% 52.8M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23250K .......... .......... .......... .......... .......... 89%  190M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23300K .......... .......... .......... .......... .......... 89%  251M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23350K .......... .......... .......... .......... .......... 89% 16.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23400K .......... .......... .......... .......... .......... 89%  128M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23450K .......... .......... .......... .......... .......... 90%  237M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23500K .......... .......... .......... .......... .......... 90%  249M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23550K .......... .......... .......... .......... .......... 90% 33.7M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23600K .......... .......... .......... .......... .......... 90% 61.8M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23650K .......... .......... .......... .......... .......... 90%  242M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23700K .......... .......... .......... .......... .......... 91%  101M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23750K .......... .......... .......... .......... .......... 91% 35.4M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23800K .......... .......... .......... .......... .......... 91%  221M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23850K .......... .......... .......... .......... .......... 91% 43.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23900K .......... .......... .......... .......... .......... 91% 40.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  23950K .......... .......... .......... .......... .......... 92% 32.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24000K .......... .......... .......... .......... .......... 92% 68.4M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24050K .......... .......... .......... .......... .......... 92% 57.4M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24100K .......... .......... .......... .......... .......... 92% 52.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24150K .......... .......... .......... .......... .......... 92% 34.4M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24200K .......... .......... .......... .......... .......... 92%  138M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24250K .......... .......... .......... .......... .......... 93% 43.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24300K .......... .......... .......... .......... .......... 93% 26.3M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24350K .......... .......... .......... .......... .......... 93% 35.6M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24400K .......... .......... .......... .......... .......... 93% 89.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24450K .......... .......... .......... .......... .......... 93% 88.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24500K .......... .......... .......... .......... .......... 94% 31.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24550K .......... .......... .......... .......... .......... 94% 28.8M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24600K .......... .......... .......... .......... .......... 94% 32.0M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24650K .......... .......... .......... .......... .......... 94% 99.8M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24700K .......... .......... .......... .......... .......... 94% 46.9M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24750K .......... .......... .......... .......... .......... 95% 42.8M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24800K .......... .......... .......... .......... .......... 95% 50.3M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24850K .......... .......... .......... .......... .......... 95% 16.4M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24900K .......... .......... .......... .......... .......... 95% 95.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  24950K .......... .......... .......... .......... .......... 95% 61.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25000K .......... .......... .......... .......... .......... 96% 36.2M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25050K .......... .......... .......... .......... .......... 96%  126M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25100K .......... .......... .......... .......... .......... 96% 69.3M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25150K .......... .......... .......... .......... .......... 96% 34.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25200K .......... .......... .......... .......... .......... 96% 99.1M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25250K .......... .......... .......... .......... .......... 96%  229M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25300K .......... .......... .......... .......... .......... 97%  134M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25350K .......... .......... .......... .......... .......... 97%  217M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25400K .......... .......... .......... .......... .......... 97%  234M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25450K .......... .......... .......... .......... .......... 97% 46.3M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25500K .......... .......... .......... .......... .......... 97% 41.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25550K .......... .......... .......... .......... .......... 98% 28.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25600K .......... .......... .......... .......... .......... 98%  237M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25650K .......... .......... .......... .......... .......... 98%  145M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25700K .......... .......... .......... .......... .......... 98%  224M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25750K .......... .......... .......... .......... .......... 98%  202M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25800K .......... .......... .......... .......... .......... 99%  199M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25850K .......... .......... .......... .......... .......... 99%  141M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25900K .......... .......... .......... .......... .......... 99% 21.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  25950K .......... .......... .......... .......... .......... 99% 23.3M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  26000K .......... .......... .......... .......... .......... 99% 42.5M 0s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:  26050K .......... .......... .......... ...                  100%  118M=0.6s
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs: 2023-11-15 23:18:55 (44.0 MB/s) - ‘terraform_1.6.4_darwin_amd64.zip’ saved [26709007/26709007]
+2023/11/15 23:18:56 1700090336,,ui,error,==> amazon-ebs:
+2023/11/15 23:18:56 1700090336,,ui,message,    amazon-ebs: Archive:  terraform_1.6.4_darwin_amd64.zip
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs:   inflating: terraform
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs: Reading package lists...
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs: Building dependency tree...
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs: Reading state information...
+2023/11/15 23:18:57 1700090337,,ui,error,==> amazon-ebs: E: Unable to locate package ansible
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs: Hit:1 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic InRelease
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs: Get:2 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs: Get:3 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-backports InRelease [83.3 kB]
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs: Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs: Get:5 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB]
+2023/11/15 23:18:57 1700090337,,ui,message,    amazon-ebs: Get:6 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/universe Translation-en [4941 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:7 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:8 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:9 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [3045 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:10 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [553 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:11 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [1347 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:12 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [187 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:13 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1914 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:14 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [421 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:15 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [25.6 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:16 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6088 B]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:17 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [53.3 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:18 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [14.6 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:19 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [18.2 kB]
+2023/11/15 23:18:58 1700090338,,ui,message,    amazon-ebs: Get:20 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [8668 B]
+2023/11/15 23:18:59 1700090339,,ui,message,    amazon-ebs: Get:21 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2717 kB]
+2023/11/15 23:18:59 1700090339,,ui,message,    amazon-ebs: Get:22 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [467 kB]
+2023/11/15 23:18:59 1700090339,,ui,message,    amazon-ebs: Get:23 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [1317 kB]
+2023/11/15 23:18:59 1700090339,,ui,message,    amazon-ebs: Get:24 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [182 kB]
+2023/11/15 23:18:59 1700090339,,ui,message,    amazon-ebs: Get:25 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1303 kB]
+2023/11/15 23:18:59 1700090339,,ui,message,    amazon-ebs: Get:26 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [308 kB]
+2023/11/15 23:18:59 1700090339,,ui,message,    amazon-ebs: Get:27 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [19.8 kB]
+2023/11/15 23:18:59 1700090339,,ui,message,    amazon-ebs: Get:28 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [3928 B]
+2023/11/15 23:19:04 1700090344,,ui,message,    amazon-ebs: Fetched 27.9 MB in 7s (4056 kB/s)
+2023/11/15 23:19:05 1700090345,,ui,message,    amazon-ebs: Reading package lists...
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: Reading package lists...
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: Building dependency tree...
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: Reading state information...
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: The following additional packages will be installed:
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs:   bridge-utils containerd pigz runc ubuntu-fan
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: Suggested packages:
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs:   ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-doc
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs:   rinse zfs-fuse | zfsutils
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: The following NEW packages will be installed:
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs:   bridge-utils containerd docker.io pigz runc ubuntu-fan
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: 0 upgraded%!(PACKER_COMMA) 6 newly installed%!(PACKER_COMMA) 0 to remove and 7 not upgraded.
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: Need to get 65.7 MB of archives.
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: After this operation%!(PACKER_COMMA) 292 MB of additional disk space will be used.
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: Get:1 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 pigz amd64 2.4-1 [57.4 kB]
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: Get:2 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 bridge-utils amd64 1.5-15ubuntu1 [30.1 kB]
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: Get:3 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 runc amd64 1.1.4-0ubuntu1~18.04.2 [3822 kB]
+2023/11/15 23:19:06 1700090346,,ui,message,    amazon-ebs: Get:4 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 containerd amd64 1.6.12-0ubuntu1~18.04.1 [31.5 MB]
+2023/11/15 23:19:07 1700090347,,ui,message,    amazon-ebs: Get:5 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 docker.io amd64 20.10.21-0ubuntu1~18.04.3 [30.3 MB]
+2023/11/15 23:19:07 1700090347,,ui,message,    amazon-ebs: Get:6 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 ubuntu-fan all 0.12.10 [34.7 kB]
+2023/11/15 23:19:08 1700090348,,ui,error,==> amazon-ebs: debconf: unable to initialize frontend: Dialog
+2023/11/15 23:19:08 1700090348,,ui,error,==> amazon-ebs: debconf: (Dialog frontend will not work on a dumb terminal%!(PACKER_COMMA) an emacs shell buffer%!(PACKER_COMMA) or without a controlling terminal.)
+2023/11/15 23:19:08 1700090348,,ui,error,==> amazon-ebs: debconf: falling back to frontend: Readline
+2023/11/15 23:19:08 1700090348,,ui,error,==> amazon-ebs: debconf: unable to initialize frontend: Readline
+2023/11/15 23:19:08 1700090348,,ui,error,==> amazon-ebs: debconf: (This frontend requires a controlling tty.)
+2023/11/15 23:19:08 1700090348,,ui,error,==> amazon-ebs: debconf: falling back to frontend: Teletype
+2023/11/15 23:19:08 1700090348,,ui,error,==> amazon-ebs: dpkg-preconfigure: unable to re-open stdin:
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Fetched 65.7 MB in 1s (44.5 MB/s)
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Selecting previously unselected package pigz.
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: (Reading database ... 58227 files and directories currently installed.)
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Preparing to unpack .../0-pigz_2.4-1_amd64.deb ...
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Unpacking pigz (2.4-1) ...
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Selecting previously unselected package bridge-utils.
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Preparing to unpack .../1-bridge-utils_1.5-15ubuntu1_amd64.deb ...
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Unpacking bridge-utils (1.5-15ubuntu1) ...
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Selecting previously unselected package runc.
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Preparing to unpack .../2-runc_1.1.4-0ubuntu1~18.04.2_amd64.deb ...
+2023/11/15 23:19:08 1700090348,,ui,message,    amazon-ebs: Unpacking runc (1.1.4-0ubuntu1~18.04.2) ...
+2023/11/15 23:19:09 1700090349,,ui,message,    amazon-ebs: Selecting previously unselected package containerd.
+2023/11/15 23:19:09 1700090349,,ui,message,    amazon-ebs: Preparing to unpack .../3-containerd_1.6.12-0ubuntu1~18.04.1_amd64.deb ...
+2023/11/15 23:19:09 1700090349,,ui,message,    amazon-ebs: Unpacking containerd (1.6.12-0ubuntu1~18.04.1) ...
+2023/11/15 23:19:13 1700090353,,ui,message,    amazon-ebs: Selecting previously unselected package docker.io.
+2023/11/15 23:19:13 1700090353,,ui,message,    amazon-ebs: Preparing to unpack .../4-docker.io_20.10.21-0ubuntu1~18.04.3_amd64.deb ...
+2023/11/15 23:19:13 1700090353,,ui,message,    amazon-ebs: Unpacking docker.io (20.10.21-0ubuntu1~18.04.3) ...
+2023/11/15 23:19:17 1700090357,,ui,message,    amazon-ebs: Selecting previously unselected package ubuntu-fan.
+2023/11/15 23:19:17 1700090357,,ui,message,    amazon-ebs: Preparing to unpack .../5-ubuntu-fan_0.12.10_all.deb ...
+2023/11/15 23:19:17 1700090357,,ui,message,    amazon-ebs: Unpacking ubuntu-fan (0.12.10) ...
+2023/11/15 23:19:17 1700090357,,ui,message,    amazon-ebs: Setting up runc (1.1.4-0ubuntu1~18.04.2) ...
+2023/11/15 23:19:17 1700090357,,ui,message,    amazon-ebs: Setting up containerd (1.6.12-0ubuntu1~18.04.1) ...
+2023/11/15 23:19:17 1700090357,,ui,message,    amazon-ebs: Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+2023/11/15 23:19:18 1700090358,,ui,message,    amazon-ebs: Setting up bridge-utils (1.5-15ubuntu1) ...
+2023/11/15 23:19:18 1700090358,,ui,message,    amazon-ebs: debconf: unable to initialize frontend: Dialog
+2023/11/15 23:19:18 1700090358,,ui,message,    amazon-ebs: debconf: (Dialog frontend will not work on a dumb terminal%!(PACKER_COMMA) an emacs shell buffer%!(PACKER_COMMA) or without a controlling terminal.)
+2023/11/15 23:19:18 1700090358,,ui,message,    amazon-ebs: debconf: falling back to frontend: Readline
+2023/11/15 23:19:18 1700090358,,ui,message,    amazon-ebs: Setting up ubuntu-fan (0.12.10) ...
+2023/11/15 23:19:18 1700090358,,ui,message,    amazon-ebs: Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service → /lib/systemd/system/ubuntu-fan.service.
+2023/11/15 23:19:19 1700090359,,ui,message,    amazon-ebs: Setting up pigz (2.4-1) ...
+2023/11/15 23:19:19 1700090359,,ui,message,    amazon-ebs: Setting up docker.io (20.10.21-0ubuntu1~18.04.3) ...
+2023/11/15 23:19:19 1700090359,,ui,message,    amazon-ebs: debconf: unable to initialize frontend: Dialog
+2023/11/15 23:19:19 1700090359,,ui,message,    amazon-ebs: debconf: (Dialog frontend will not work on a dumb terminal%!(PACKER_COMMA) an emacs shell buffer%!(PACKER_COMMA) or without a controlling terminal.)
+2023/11/15 23:19:19 1700090359,,ui,message,    amazon-ebs: debconf: falling back to frontend: Readline
+2023/11/15 23:19:19 1700090359,,ui,message,    amazon-ebs: Adding group `docker' (GID 115) ...
+2023/11/15 23:19:19 1700090359,,ui,message,    amazon-ebs: Done.
+2023/11/15 23:19:19 1700090359,,ui,message,    amazon-ebs: Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+2023/11/15 23:19:19 1700090359,,ui,message,    amazon-ebs: Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+2023/11/15 23:19:21 1700090361,,ui,message,    amazon-ebs: Processing triggers for systemd (237-3ubuntu10.57) ...
+2023/11/15 23:19:21 1700090361,,ui,message,    amazon-ebs: Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+2023/11/15 23:19:23 1700090363,,ui,message,    amazon-ebs: Processing triggers for ureadahead (0.100.0-21) ...
+2023/11/15 23:19:26 1700090366,,ui,error,==> amazon-ebs: sudo: chkconfig: command not found
+2023/11/15 23:19:26 1700090366,,ui,error,==> amazon-ebs: Unable to find image 'grafana/grafana:latest' locally
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: latest: Pulling from grafana/grafana
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: 96526aa774ef: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: c3f80c6ea12f: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: f019ff6ad76f: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: 6f1334162dbd: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: c5a70bb6423c: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: c10a359f79c5: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: b705a9706bbc: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: 544d3744fe87: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: 039ac7918135: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: 876939047d48: Pulling fs layer
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: 6f1334162dbd: Waiting
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: c5a70bb6423c: Waiting
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: c10a359f79c5: Waiting
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: b705a9706bbc: Waiting
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: 544d3744fe87: Waiting
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: 039ac7918135: Waiting
+2023/11/15 23:19:27 1700090367,,ui,error,==> amazon-ebs: 876939047d48: Waiting
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: c3f80c6ea12f: Verifying Checksum
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: c3f80c6ea12f: Download complete
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: f019ff6ad76f: Verifying Checksum
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: f019ff6ad76f: Download complete
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: 96526aa774ef: Verifying Checksum
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: 96526aa774ef: Download complete
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: 96526aa774ef: Pull complete
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: 6f1334162dbd: Verifying Checksum
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: 6f1334162dbd: Download complete
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: c10a359f79c5: Verifying Checksum
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: c10a359f79c5: Download complete
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: c5a70bb6423c: Verifying Checksum
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: c5a70bb6423c: Download complete
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: c3f80c6ea12f: Pull complete
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: 039ac7918135: Verifying Checksum
+2023/11/15 23:19:28 1700090368,,ui,error,==> amazon-ebs: 039ac7918135: Download complete
+2023/11/15 23:19:29 1700090369,,ui,error,==> amazon-ebs: 876939047d48: Verifying Checksum
+2023/11/15 23:19:29 1700090369,,ui,error,==> amazon-ebs: 876939047d48: Download complete
+2023/11/15 23:19:30 1700090370,,ui,error,==> amazon-ebs: f019ff6ad76f: Pull complete
+2023/11/15 23:19:30 1700090370,,ui,error,==> amazon-ebs: 544d3744fe87: Verifying Checksum
+2023/11/15 23:19:30 1700090370,,ui,error,==> amazon-ebs: 544d3744fe87: Download complete
+2023/11/15 23:19:30 1700090370,,ui,error,==> amazon-ebs: b705a9706bbc: Verifying Checksum
+2023/11/15 23:19:30 1700090370,,ui,error,==> amazon-ebs: b705a9706bbc: Download complete
+2023/11/15 23:19:30 1700090370,,ui,error,==> amazon-ebs: 6f1334162dbd: Pull complete
+2023/11/15 23:19:30 1700090370,,ui,error,==> amazon-ebs: c5a70bb6423c: Pull complete
+2023/11/15 23:19:30 1700090370,,ui,error,==> amazon-ebs: c10a359f79c5: Pull complete
+2023/11/15 23:19:33 1700090373,,ui,error,==> amazon-ebs: b705a9706bbc: Pull complete
+2023/11/15 23:19:37 1700090377,,ui,error,==> amazon-ebs: 544d3744fe87: Pull complete
+2023/11/15 23:19:38 1700090378,,ui,error,==> amazon-ebs: 039ac7918135: Pull complete
+2023/11/15 23:19:38 1700090378,,ui,error,==> amazon-ebs: 876939047d48: Pull complete
+2023/11/15 23:19:38 1700090378,,ui,error,==> amazon-ebs: Digest: sha256:be0359383ed7d8436c53760cf8ff3671043ee3e0169f363ef33ecb329102fe4c
+2023/11/15 23:19:38 1700090378,,ui,error,==> amazon-ebs: Status: Downloaded newer image for grafana/grafana:latest
+2023/11/15 23:19:38 1700090378,,ui,message,    amazon-ebs: 0fd49d435a5d088cbb55040fdc27a2660b39824f19d948e835b48f813d2be24e
+2023/11/15 23:19:39 1700090379,,ui,message,    amazon-ebs: Hit:1 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic InRelease
+2023/11/15 23:19:39 1700090379,,ui,message,    amazon-ebs: Hit:2 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates InRelease
+2023/11/15 23:19:39 1700090379,,ui,message,    amazon-ebs: Hit:3 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-backports InRelease
+2023/11/15 23:19:39 1700090379,,ui,message,    amazon-ebs: Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease
+2023/11/15 23:19:44 1700090384,,ui,error,==> amazon-ebs:
+2023/11/15 23:19:44 1700090384,,ui,error,==> amazon-ebs: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs: Reading package lists...
+2023/11/15 23:19:44 1700090384,,ui,error,==> amazon-ebs:
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs: Reading package lists...
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs: Building dependency tree...
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs: Reading state information...
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs: The following additional packages will be installed:
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs:   ca-certificates-java fontconfig-config fonts-dejavu-core java-common
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs:   libavahi-client3 libavahi-common-data libavahi-common3 libcups2
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs:   libfontconfig1 libjpeg-turbo8 libjpeg8 liblcms2-2 libnspr4 libnss3
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs:   libpcsclite1 libxi6 libxrender1 libxtst6 x11-common
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs: Suggested packages:
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs:   default-jre cups-common liblcms2-utils pcscd libnss-mdns fonts-dejavu-extra
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs:   fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
+2023/11/15 23:19:44 1700090384,,ui,message,    amazon-ebs:   fonts-wqy-zenhei fonts-indic
+2023/11/15 23:19:45 1700090385,,ui,message,    amazon-ebs: The following NEW packages will be installed:
+2023/11/15 23:19:45 1700090385,,ui,message,    amazon-ebs:   ca-certificates-java fontconfig-config fonts-dejavu-core java-common
+2023/11/15 23:19:45 1700090385,,ui,message,    amazon-ebs:   libavahi-client3 libavahi-common-data libavahi-common3 libcups2
+2023/11/15 23:19:45 1700090385,,ui,message,    amazon-ebs:   libfontconfig1 libjpeg-turbo8 libjpeg8 liblcms2-2 libnspr4 libnss3
+2023/11/15 23:19:45 1700090385,,ui,message,    amazon-ebs:   libpcsclite1 libxi6 libxrender1 libxtst6 openjdk-8-jre-headless x11-common
+2023/11/15 23:19:45 1700090385,,ui,message,    amazon-ebs: 0 upgraded%!(PACKER_COMMA) 20 newly installed%!(PACKER_COMMA) 0 to remove and 7 not upgraded.
+2023/11/15 23:19:45 1700090385,,ui,message,    amazon-ebs: Need to get 31.5 MB of archives.
+2023/11/15 23:19:45 1700090385,,ui,message,    amazon-ebs: After this operation%!(PACKER_COMMA) 115 MB of additional disk space will be used.
+2023/11/15 23:19:45 1700090385,,ui,message,    amazon-ebs: Get:1 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libjpeg-turbo8 amd64 1.5.2-0ubuntu5.18.04.6 [111 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:2 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 java-common all 0.68ubuntu1~18.04.1 [14.5 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:3 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libavahi-common-data amd64 0.7-3.1ubuntu1.3 [22.2 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:4 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libavahi-common3 amd64 0.7-3.1ubuntu1.3 [21.6 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:5 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libavahi-client3 amd64 0.7-3.1ubuntu1.3 [25.2 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:6 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcups2 amd64 2.2.7-1ubuntu2.10 [211 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:7 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 liblcms2-2 amd64 2.9-1ubuntu0.1 [139 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:8 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:9 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:10 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 fontconfig-config all 2.12.6-0ubuntu2 [55.8 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:11 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libfontconfig1 amd64 2.12.6-0ubuntu2 [137 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:12 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libnspr4 amd64 2:4.18-1ubuntu1 [112 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:13 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnss3 amd64 2:3.35-2ubuntu2.16 [1220 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:14 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libpcsclite1 amd64 1.8.23-1 [21.3 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:15 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libxi6 amd64 2:1.7.9-1 [29.2 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:16 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libxrender1 amd64 1:0.9.10-1 [18.7 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:17 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 x11-common all 1:7.7+19ubuntu7.1 [22.5 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:18 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libxtst6 amd64 2:1.2.3-1 [12.8 kB]
+2023/11/15 23:19:46 1700090386,,ui,message,    amazon-ebs: Get:19 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 openjdk-8-jre-headless amd64 8u372-ga~us1-0ubuntu1~18.04 [28.3 MB]
+2023/11/15 23:19:47 1700090387,,ui,message,    amazon-ebs: Get:20 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ca-certificates-java all 20180516ubuntu1~18.04.2 [12.5 kB]
+2023/11/15 23:19:47 1700090387,,ui,error,==> amazon-ebs: debconf: unable to initialize frontend: Dialog
+2023/11/15 23:19:47 1700090387,,ui,error,==> amazon-ebs: debconf: (Dialog frontend will not work on a dumb terminal%!(PACKER_COMMA) an emacs shell buffer%!(PACKER_COMMA) or without a controlling terminal.)
+2023/11/15 23:19:47 1700090387,,ui,error,==> amazon-ebs: debconf: falling back to frontend: Readline
+2023/11/15 23:19:47 1700090387,,ui,error,==> amazon-ebs: debconf: unable to initialize frontend: Readline
+2023/11/15 23:19:47 1700090387,,ui,error,==> amazon-ebs: debconf: (This frontend requires a controlling tty.)
+2023/11/15 23:19:47 1700090387,,ui,error,==> amazon-ebs: debconf: falling back to frontend: Teletype
+2023/11/15 23:19:47 1700090387,,ui,error,==> amazon-ebs: dpkg-preconfigure: unable to re-open stdin:
+2023/11/15 23:19:47 1700090387,,ui,message,    amazon-ebs: Fetched 31.5 MB in 1s (24.2 MB/s)
+2023/11/15 23:19:47 1700090387,,ui,message,    amazon-ebs: Selecting previously unselected package libjpeg-turbo8:amd64.
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: (Reading database ... 58553 files and directories currently installed.)
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Preparing to unpack .../00-libjpeg-turbo8_1.5.2-0ubuntu5.18.04.6_amd64.deb ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Unpacking libjpeg-turbo8:amd64 (1.5.2-0ubuntu5.18.04.6) ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Selecting previously unselected package java-common.
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Preparing to unpack .../01-java-common_0.68ubuntu1~18.04.1_all.deb ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Unpacking java-common (0.68ubuntu1~18.04.1) ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Selecting previously unselected package libavahi-common-data:amd64.
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Preparing to unpack .../02-libavahi-common-data_0.7-3.1ubuntu1.3_amd64.deb ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Unpacking libavahi-common-data:amd64 (0.7-3.1ubuntu1.3) ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Selecting previously unselected package libavahi-common3:amd64.
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Preparing to unpack .../03-libavahi-common3_0.7-3.1ubuntu1.3_amd64.deb ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Unpacking libavahi-common3:amd64 (0.7-3.1ubuntu1.3) ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Selecting previously unselected package libavahi-client3:amd64.
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Preparing to unpack .../04-libavahi-client3_0.7-3.1ubuntu1.3_amd64.deb ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Unpacking libavahi-client3:amd64 (0.7-3.1ubuntu1.3) ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Selecting previously unselected package libcups2:amd64.
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Preparing to unpack .../05-libcups2_2.2.7-1ubuntu2.10_amd64.deb ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Unpacking libcups2:amd64 (2.2.7-1ubuntu2.10) ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Selecting previously unselected package liblcms2-2:amd64.
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Preparing to unpack .../06-liblcms2-2_2.9-1ubuntu0.1_amd64.deb ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Unpacking liblcms2-2:amd64 (2.9-1ubuntu0.1) ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Selecting previously unselected package libjpeg8:amd64.
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Preparing to unpack .../07-libjpeg8_8c-2ubuntu8_amd64.deb ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Selecting previously unselected package fonts-dejavu-core.
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Preparing to unpack .../08-fonts-dejavu-core_2.37-1_all.deb ...
+2023/11/15 23:19:48 1700090388,,ui,message,    amazon-ebs: Unpacking fonts-dejavu-core (2.37-1) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package fontconfig-config.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../09-fontconfig-config_2.12.6-0ubuntu2_all.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking fontconfig-config (2.12.6-0ubuntu2) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package libfontconfig1:amd64.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../10-libfontconfig1_2.12.6-0ubuntu2_amd64.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking libfontconfig1:amd64 (2.12.6-0ubuntu2) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package libnspr4:amd64.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../11-libnspr4_2%3a4.18-1ubuntu1_amd64.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking libnspr4:amd64 (2:4.18-1ubuntu1) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package libnss3:amd64.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../12-libnss3_2%3a3.35-2ubuntu2.16_amd64.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking libnss3:amd64 (2:3.35-2ubuntu2.16) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package libpcsclite1:amd64.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../13-libpcsclite1_1.8.23-1_amd64.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking libpcsclite1:amd64 (1.8.23-1) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package libxi6:amd64.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../14-libxi6_2%3a1.7.9-1_amd64.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking libxi6:amd64 (2:1.7.9-1) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package libxrender1:amd64.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../15-libxrender1_1%3a0.9.10-1_amd64.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking libxrender1:amd64 (1:0.9.10-1) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package x11-common.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../16-x11-common_1%3a7.7+19ubuntu7.1_all.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: dpkg-query: no packages found matching nux-tools
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking x11-common (1:7.7+19ubuntu7.1) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package libxtst6:amd64.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../17-libxtst6_2%3a1.2.3-1_amd64.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking libxtst6:amd64 (2:1.2.3-1) ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Selecting previously unselected package openjdk-8-jre-headless:amd64.
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Preparing to unpack .../18-openjdk-8-jre-headless_8u372-ga~us1-0ubuntu1~18.04_amd64.deb ...
+2023/11/15 23:19:49 1700090389,,ui,message,    amazon-ebs: Unpacking openjdk-8-jre-headless:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Selecting previously unselected package ca-certificates-java.
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Preparing to unpack .../19-ca-certificates-java_20180516ubuntu1~18.04.2_all.deb ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Unpacking ca-certificates-java (20180516ubuntu1~18.04.2) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Setting up libxi6:amd64 (2:1.7.9-1) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Setting up liblcms2-2:amd64 (2.9-1ubuntu0.1) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Setting up libpcsclite1:amd64 (1.8.23-1) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Setting up fonts-dejavu-core (2.37-1) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Setting up java-common (0.68ubuntu1~18.04.1) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Setting up libjpeg-turbo8:amd64 (1.5.2-0ubuntu5.18.04.6) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Setting up libnspr4:amd64 (2:4.18-1ubuntu1) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Setting up libxrender1:amd64 (1:0.9.10-1) ...
+2023/11/15 23:19:54 1700090394,,ui,message,    amazon-ebs: Setting up x11-common (1:7.7+19ubuntu7.1) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: debconf: unable to initialize frontend: Dialog
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: debconf: (Dialog frontend will not work on a dumb terminal%!(PACKER_COMMA) an emacs shell buffer%!(PACKER_COMMA) or without a controlling terminal.)
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: debconf: falling back to frontend: Readline
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up libavahi-common-data:amd64 (0.7-3.1ubuntu1.3) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up fontconfig-config (2.12.6-0ubuntu2) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up libnss3:amd64 (2:3.35-2ubuntu2.16) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up libxtst6:amd64 (2:1.2.3-1) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up libavahi-common3:amd64 (0.7-3.1ubuntu1.3) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up libfontconfig1:amd64 (2.12.6-0ubuntu2) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up libavahi-client3:amd64 (0.7-3.1ubuntu1.3) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up libcups2:amd64 (2.2.7-1ubuntu2.10) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: Setting up ca-certificates-java (20180516ubuntu1~18.04.2) ...
+2023/11/15 23:19:55 1700090395,,ui,message,    amazon-ebs: head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:GLOBALTRUST_2020.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Izenpe.com.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Baltimore_CyberTrust_Root.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:TunTrust_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Certum_Trusted_Network_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Atos_TrustedRoot_2011.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:GlobalSign_Root_CA_-_R6.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Entrust_Root_Certification_Authority.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:USERTrust_ECC_Certification_Authority.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Comodo_AAA_Services_root.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:CFCA_EV_ROOT.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:HiPKI_Root_CA_-_G1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:TeliaSonera_Root_CA_v1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:ISRG_Root_X2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:ACCVRAIZ1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Certainly_Root_E1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Actalis_Authentication_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:QuoVadis_Root_CA_1_G3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:E-Tugra_Global_Root_CA_ECC_v3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Security_Communication_ECC_RootCA1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:DigiCert_Global_Root_G3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:emSign_Root_CA_-_C1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:certSIGN_Root_CA_G2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:DigiCert_Assured_ID_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:AffirmTrust_Premium.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:emSign_ECC_Root_CA_-_G3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:certSIGN_ROOT_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Certum_Trusted_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:DigiCert_Assured_ID_Root_G3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Amazon_Root_CA_4.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Certigna.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:QuoVadis_Root_CA_3_G3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:DigiCert_Global_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Certum_EC-384_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068_2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:GlobalSign_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:CA_Disig_Root_R2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Hongkong_Post_Root_CA_3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:GTS_Root_R3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:ANF_Secure_Server_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:vTrus_ECC_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:AffirmTrust_Commercial.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:UCA_Global_G2_Root.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Go_Daddy_Class_2_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Amazon_Root_CA_3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:COMODO_ECC_Certification_Authority.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:SwissSign_Gold_CA_-_G2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:emSign_ECC_Root_CA_-_C3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:GTS_Root_R1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:E-Tugra_Global_Root_CA_RSA_v3.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:ISRG_Root_X1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:XRamp_Global_CA_Root.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:SecureTrust_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:SZAFIR_ROOT_CA2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Telia_Root_CA_v2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Security_Communication_RootCA2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:GlobalSign_Root_E46.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Certum_Trusted_Network_CA_2.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Buypass_Class_3_Root_CA.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Entrust_Root_Certification_Authority_-_G4.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:AffirmTrust_Networking.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+2023/11/15 23:19:56 1700090396,,ui,message,    amazon-ebs: Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Amazon_Root_CA_2.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:GlobalSign_Root_CA_-_R3.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:GTS_Root_R2.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:TWCA_Global_Root_CA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:AffirmTrust_Premium_ECC.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:SwissSign_Silver_CA_-_G2.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:vTrus_Root_CA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:e-Szigno_Root_CA_2017.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Hongkong_Post_Root_CA_1.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:QuoVadis_Root_CA_2_G3.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Certigna_Root_CA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Trustwave_Global_Certification_Authority.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:COMODO_Certification_Authority.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Security_Communication_Root_CA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Buypass_Class_2_Root_CA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Security_Communication_RootCA3.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:QuoVadis_Root_CA_2.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:QuoVadis_Root_CA_3.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Certainly_Root_R1.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:DigiCert_Global_Root_G2.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:DigiCert_Trusted_Root_G4.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:emSign_Root_CA_-_G1.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:AC_RAIZ_FNMT-RCM.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Secure_Global_CA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:NAVER_Global_Root_Certification_Authority.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Amazon_Root_CA_1.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:GlobalSign_Root_R46.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:TWCA_Root_Certification_Authority.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:DigiCert_Assured_ID_Root_G2.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:UCA_Extended_Validation_Root.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:USERTrust_RSA_Certification_Authority.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:Starfield_Class_2_CA.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:COMODO_RSA_Certification_Authority.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:ePKI_Root_Certification_Authority.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:SecureSign_RootCA11.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:E-Tugra_Certification_Authority.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Adding debian:GTS_Root_R4.pem
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: done.
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Processing triggers for ureadahead (0.100.0-21) ...
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Processing triggers for systemd (237-3ubuntu10.57) ...
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Processing triggers for ca-certificates (20230311ubuntu0.18.04.1) ...
+2023/11/15 23:19:57 1700090397,,ui,message,    amazon-ebs: Updating certificates in /etc/ssl/certs...
+2023/11/15 23:19:58 1700090398,,ui,message,    amazon-ebs: 0 added%!(PACKER_COMMA) 0 removed; done.
+2023/11/15 23:19:58 1700090398,,ui,message,    amazon-ebs: Running hooks in /etc/ca-certificates/update.d...
+2023/11/15 23:19:58 1700090398,,ui,message,    amazon-ebs:
+2023/11/15 23:19:58 1700090398,,ui,message,    amazon-ebs: done.
+2023/11/15 23:19:58 1700090398,,ui,message,    amazon-ebs: done.
+2023/11/15 23:19:58 1700090398,,ui,message,    amazon-ebs: Setting up openjdk-8-jre-headless:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java to provide /usr/bin/java (java) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode
+2023/11/15 23:19:59 1700090399,,ui,message,    amazon-ebs: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+2023/11/15 23:20:01 1700090401,,ui,error,==> amazon-ebs: Warning: apt-key output should not be parsed (stdout is not a terminal)
+2023/11/15 23:20:02 1700090402,,ui,message,    amazon-ebs: OK
+2023/11/15 23:20:02 1700090402,,ui,message,    amazon-ebs: Hit:1 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic InRelease
+2023/11/15 23:20:02 1700090402,,ui,message,    amazon-ebs: Hit:2 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates InRelease
+2023/11/15 23:20:02 1700090402,,ui,message,    amazon-ebs: Hit:3 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-backports InRelease
+2023/11/15 23:20:02 1700090402,,ui,message,    amazon-ebs: Hit:5 http://security.ubuntu.com/ubuntu bionic-security InRelease
+2023/11/15 23:20:02 1700090402,,ui,message,    amazon-ebs: Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+2023/11/15 23:20:02 1700090402,,ui,message,    amazon-ebs: Get:6 https://pkg.jenkins.io/debian-stable binary/ Release [2044 B]
+2023/11/15 23:20:02 1700090402,,ui,message,    amazon-ebs: Get:7 https://pkg.jenkins.io/debian-stable binary/ Release.gpg [833 B]
+2023/11/15 23:20:03 1700090403,,ui,message,    amazon-ebs: Ign:7 https://pkg.jenkins.io/debian-stable binary/ Release.gpg
+2023/11/15 23:20:05 1700090405,,ui,error,==> amazon-ebs: W: GPG error: https://pkg.jenkins.io/debian-stable binary/ Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 5BA31D57EF5975CA
+2023/11/15 23:20:05 1700090405,,ui,error,==> amazon-ebs: E: The repository 'http://pkg.jenkins.io/debian-stable binary/ Release' is not signed.
+2023/11/15 23:20:05 1700090405,,ui,message,    amazon-ebs: Reading package lists...
+2023/11/15 23:20:06 1700090406,,ui,message,    amazon-ebs: 'universe' distribution component is already enabled for all sources.
+2023/11/15 23:20:06 1700090406,,ui,message,    amazon-ebs: Reading package lists...
+2023/11/15 23:20:06 1700090406,,ui,message,    amazon-ebs: Building dependency tree...
+2023/11/15 23:20:06 1700090406,,ui,message,    amazon-ebs: Reading state information...
+2023/11/15 23:20:06 1700090406,,ui,message,    amazon-ebs: Package jenkins is not available%!(PACKER_COMMA) but is referred to by another package.
+2023/11/15 23:20:06 1700090406,,ui,message,    amazon-ebs: This may mean that the package is missing%!(PACKER_COMMA) has been obsoleted%!(PACKER_COMMA) or
+2023/11/15 23:20:06 1700090406,,ui,message,    amazon-ebs: is only available from another source
+2023/11/15 23:20:06 1700090406,,ui,message,    amazon-ebs:
+2023/11/15 23:20:06 1700090406,,ui,error,==> amazon-ebs: E: Package 'jenkins' has no installation candidate
+2023/11/15 23:20:06 1700090406,,ui,error,==> amazon-ebs: Failed to enable unit: Unit file jenkins.service does not exist.
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Reading package lists...
+2023/11/15 23:20:07 1700090407,,ui,error,==> amazon-ebs: Failed to start jenkins.service: Unit jenkins.service not found.
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Building dependency tree...
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Reading state information...
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: The following additional packages will be installed:
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs:   libgd3 libjbig0 libnginx-mod-http-geoip libnginx-mod-http-image-filter
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs:   libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs:   libwebp6 libxpm4 nginx-common nginx-core
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Suggested packages:
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs:   libgd-tools fcgiwrap nginx-doc ssl-cert
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: The following NEW packages will be installed:
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs:   libgd3 libjbig0 libnginx-mod-http-geoip libnginx-mod-http-image-filter
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs:   libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs:   libwebp6 libxpm4 nginx nginx-common nginx-core
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: 0 upgraded%!(PACKER_COMMA) 13 newly installed%!(PACKER_COMMA) 0 to remove and 7 not upgraded.
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Need to get 1118 kB of archives.
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: After this operation%!(PACKER_COMMA) 3718 kB of additional disk space will be used.
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:1 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.18.04.1 [27.0 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:2 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libtiff5 amd64 4.0.9-5ubuntu0.10 [154 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:3 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwebp6 amd64 0.6.1-2ubuntu0.18.04.2 [186 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:4 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.18.04.2 [34.8 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:5 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgd3 amd64 2.2.5-4ubuntu0.5 [119 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:6 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 nginx-common all 1.14.0-0ubuntu1.11 [37.2 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:7 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-http-geoip amd64 1.14.0-0ubuntu1.11 [11.0 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:8 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-http-image-filter amd64 1.14.0-0ubuntu1.11 [14.3 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:9 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.14.0-0ubuntu1.11 [12.8 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:10 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-mail amd64 1.14.0-0ubuntu1.11 [41.8 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:11 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-stream amd64 1.14.0-0ubuntu1.11 [63.5 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:12 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 nginx-core amd64 1.14.0-0ubuntu1.11 [413 kB]
+2023/11/15 23:20:07 1700090407,,ui,message,    amazon-ebs: Get:13 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 nginx all 1.14.0-0ubuntu1.11 [3596 B]
+2023/11/15 23:20:07 1700090407,,ui,error,==> amazon-ebs: debconf: unable to initialize frontend: Dialog
+2023/11/15 23:20:07 1700090407,,ui,error,==> amazon-ebs: debconf: (Dialog frontend will not work on a dumb terminal%!(PACKER_COMMA) an emacs shell buffer%!(PACKER_COMMA) or without a controlling terminal.)
+2023/11/15 23:20:07 1700090407,,ui,error,==> amazon-ebs: debconf: falling back to frontend: Readline
+2023/11/15 23:20:07 1700090407,,ui,error,==> amazon-ebs: debconf: unable to initialize frontend: Readline
+2023/11/15 23:20:07 1700090407,,ui,error,==> amazon-ebs: debconf: (This frontend requires a controlling tty.)
+2023/11/15 23:20:07 1700090407,,ui,error,==> amazon-ebs: debconf: falling back to frontend: Teletype
+2023/11/15 23:20:07 1700090407,,ui,error,==> amazon-ebs: dpkg-preconfigure: unable to re-open stdin:
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Fetched 1118 kB in 0s (26.9 MB/s)
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libjbig0:amd64.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: (Reading database ... 59048 files and directories currently installed.)
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../00-libjbig0_2.1-3.1ubuntu0.18.04.1_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libjbig0:amd64 (2.1-3.1ubuntu0.18.04.1) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libtiff5:amd64.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../01-libtiff5_4.0.9-5ubuntu0.10_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libtiff5:amd64 (4.0.9-5ubuntu0.10) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libwebp6:amd64.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../02-libwebp6_0.6.1-2ubuntu0.18.04.2_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libwebp6:amd64 (0.6.1-2ubuntu0.18.04.2) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libxpm4:amd64.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../03-libxpm4_1%3a3.5.12-1ubuntu0.18.04.2_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.18.04.2) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libgd3:amd64.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../04-libgd3_2.2.5-4ubuntu0.5_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libgd3:amd64 (2.2.5-4ubuntu0.5) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package nginx-common.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../05-nginx-common_1.14.0-0ubuntu1.11_all.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking nginx-common (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libnginx-mod-http-geoip.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../06-libnginx-mod-http-geoip_1.14.0-0ubuntu1.11_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libnginx-mod-http-geoip (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libnginx-mod-http-image-filter.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../07-libnginx-mod-http-image-filter_1.14.0-0ubuntu1.11_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libnginx-mod-http-image-filter (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libnginx-mod-http-xslt-filter.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../08-libnginx-mod-http-xslt-filter_1.14.0-0ubuntu1.11_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libnginx-mod-http-xslt-filter (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libnginx-mod-mail.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../09-libnginx-mod-mail_1.14.0-0ubuntu1.11_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libnginx-mod-mail (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package libnginx-mod-stream.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../10-libnginx-mod-stream_1.14.0-0ubuntu1.11_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking libnginx-mod-stream (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package nginx-core.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../11-nginx-core_1.14.0-0ubuntu1.11_amd64.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking nginx-core (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Selecting previously unselected package nginx.
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Preparing to unpack .../12-nginx_1.14.0-0ubuntu1.11_all.deb ...
+2023/11/15 23:20:08 1700090408,,ui,message,    amazon-ebs: Unpacking nginx (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libjbig0:amd64 (2.1-3.1ubuntu0.18.04.1) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up nginx-common (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: debconf: unable to initialize frontend: Dialog
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: debconf: (Dialog frontend will not work on a dumb terminal%!(PACKER_COMMA) an emacs shell buffer%!(PACKER_COMMA) or without a controlling terminal.)
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: debconf: falling back to frontend: Readline
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libtiff5:amd64 (4.0.9-5ubuntu0.10) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libnginx-mod-mail (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.18.04.2) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libnginx-mod-http-xslt-filter (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libnginx-mod-http-geoip (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libwebp6:amd64 (0.6.1-2ubuntu0.18.04.2) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libnginx-mod-stream (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libgd3:amd64 (2.2.5-4ubuntu0.5) ...
+2023/11/15 23:20:09 1700090409,,ui,message,    amazon-ebs: Setting up libnginx-mod-http-image-filter (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:10 1700090410,,ui,message,    amazon-ebs: Setting up nginx-core (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:10 1700090410,,ui,message,    amazon-ebs: Setting up nginx (1.14.0-0ubuntu1.11) ...
+2023/11/15 23:20:10 1700090410,,ui,message,    amazon-ebs: Processing triggers for systemd (237-3ubuntu10.57) ...
+2023/11/15 23:20:10 1700090410,,ui,message,    amazon-ebs: Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+2023/11/15 23:20:10 1700090410,,ui,message,    amazon-ebs: Processing triggers for ufw (0.36-0ubuntu0.18.04.2) ...
+2023/11/15 23:20:10 1700090410,,ui,message,    amazon-ebs: Processing triggers for ureadahead (0.100.0-21) ...
+2023/11/15 23:20:11 1700090411,,ui,message,    amazon-ebs: Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+2023/11/15 23:20:12 1700090412,,ui,error,==> amazon-ebs: Synchronizing state of nginx.service with SysV service script with /lib/systemd/systemd-sysv-install.
+2023/11/15 23:20:12 1700090412,,ui,error,==> amazon-ebs: Executing: /lib/systemd/systemd-sysv-install enable nginx
+2023/11/15 23:20:13 packer-builder-amazon-ebs plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2023/11/15 23:20:13 [INFO] 34435 bytes written for 'stdout'
+2023/11/15 23:20:13 [INFO] 64783 bytes written for 'stderr'
+2023/11/15 23:20:13 [INFO] RPC client: Communicator ended with: 0
+2023/11/15 23:20:13 [INFO] RPC endpoint: Communicator ended with: 0
+2023/11/15 23:20:13 packer-provisioner-shell plugin: [INFO] 34435 bytes written for 'stdout'
+2023/11/15 23:20:13 packer-provisioner-shell plugin: [INFO] 64783 bytes written for 'stderr'
+2023/11/15 23:20:13 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2023/11/15 23:20:13 packer-builder-amazon-ebs plugin: [DEBUG] Opening new ssh session
+2023/11/15 23:20:13 packer-builder-amazon-ebs plugin: [DEBUG] starting remote command: rm -f /tmp/script_2514.sh
+2023/11/15 23:20:13 packer-builder-amazon-ebs plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2023/11/15 23:20:13 [INFO] RPC client: Communicator ended with: 0
+2023/11/15 23:20:13 [INFO] RPC endpoint: Communicator ended with: 0
+2023/11/15 23:20:13 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2023/11/15 23:20:13 packer-builder-amazon-ebs plugin: [DEBUG] Opening new ssh session
+2023/11/15 23:20:13 packer-builder-amazon-ebs plugin: [DEBUG] starting remote command: rm -f
+2023/11/15 23:20:13 packer-builder-amazon-ebs plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2023/11/15 23:20:13 [INFO] RPC client: Communicator ended with: 0
+2023/11/15 23:20:13 [INFO] RPC endpoint: Communicator ended with: 0
+2023/11/15 23:20:13 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2023/11/15 23:20:13 [INFO] (telemetry) ending shell
+2023/11/15 23:20:13 1700090413,,ui,say,==> amazon-ebs: Stopping the source instance...
+2023/11/15 23:20:13 1700090413,,ui,message,    amazon-ebs: Stopping instance
+2023/11/15 23:20:13 1700090413,,ui,say,==> amazon-ebs: Waiting for the instance to stop...
+2023/11/15 23:20:44 1700090444,,ui,say,==> amazon-ebs: Creating AMI packer_nginx 1700090261 from instance i-099604e51f06468c2
+2023/11/15 23:20:44 1700090444,,ui,message,    amazon-ebs: AMI: ami-0707cb6584e756e0a
+2023/11/15 23:20:44 1700090444,,ui,say,==> amazon-ebs: Waiting for AMI to become ready...
+2023/11/15 23:23:47 1700090627,,ui,say,==> amazon-ebs: Skipping Enable AMI deprecation...
+2023/11/15 23:23:47 1700090627,,ui,say,==> amazon-ebs: Terminating the source AWS instance...
+2023/11/15 23:24:03 1700090643,,ui,say,==> amazon-ebs: Cleaning up any extra volumes...
+2023/11/15 23:24:03 1700090643,,ui,say,==> amazon-ebs: No volumes to clean up%!(PACKER_COMMA) skipping
+2023/11/15 23:24:03 1700090643,,ui,say,==> amazon-ebs: Deleting temporary security group...
+2023/11/15 23:24:04 1700090644,,ui,say,==> amazon-ebs: Deleting temporary keypair...
+2023/11/15 23:24:04 [INFO] (telemetry) ending amazon-ebs
+2023/11/15 23:24:04 1700090644,,ui,say,Build 'amazon-ebs' finished after 6 minutes 22 seconds.
+2023/11/15 23:24:04 1700090644,,ui,say,\n==> Wait completed after 6 minutes 22 seconds
+2023/11/15 23:24:04 1700090644,,ui,say,\n==> Builds finished. The artifacts of successful builds are:
+2023/11/15 23:24:04 1700090644,amazon-ebs,artifact-count,1
+2023/11/15 23:24:04 1700090644,amazon-ebs,artifact,0,builder-id,mitchellh.amazonebs
+2023/11/15 23:24:04 1700090644,amazon-ebs,artifact,0,id,eu-west-1:ami-0707cb6584e756e0a
+2023/11/15 23:24:04 1700090644,amazon-ebs,artifact,0,string,AMIs were created:\neu-west-1: ami-0707cb6584e756e0a\n
+2023/11/15 23:24:04 1700090644,amazon-ebs,artifact,0,files-count,0
+2023/11/15 23:24:04 1700090644,amazon-ebs,artifact,0,end
+2023/11/15 23:24:04 1700090644,,ui,say,--> amazon-ebs: AMIs were created:\neu-west-1: ami-0707cb6584e756e0a\n
+2023/11/15 23:24:04 [INFO] (telemetry) Finalizing.
+2023/11/15 23:24:04 waiting for all plugin processes to complete...
+2023/11/15 23:24:04 /usr/local/Cellar/packer/1.9.4/libexec/bin/packer: plugin process exited
+2023/11/15 23:24:04 /usr/local/Cellar/packer/1.9.4/libexec/bin/packer: plugin process exited

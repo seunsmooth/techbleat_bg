@@ -6,7 +6,7 @@ export PACKER_LOG_PATH="packerlog.txt"
 echo $PACKER_LOG 
 echo $PACKER_LOG_PATH
 AMI_IDa=`packer build -machine-readable ../techbleat_bg/packer/packer.json | tee build.log` 
-AMI_ID=`grep 'artifact,0,id' build.log | cut -d, -f6 | cut -d: -f2`
+AMI_ID=`grep 'artifact,0,id' build.log | cut -d, -f6 | cut -d: -f2` 
 echo 'variable "AMI_ID" { default = "'${AMI_ID}'" }' > ../techbleat_bg/terraform/amivar.tf
 
 sudo apt-get install -y docker.io
