@@ -1,10 +1,1 @@
-1700088212,,ui,say,Warning: Bundled plugins used\n\nThis template relies on the use of plugins bundled into the Packer binary.\nThe practice of bundling external plugins into Packer will be removed in an\nupcoming version.\n\nTo remove this warning and ensure builds keep working you can install these\nexternal plugins with the 'packer plugins install' command\n\n* packer plugins install github.com/hashicorp/amazon\n\nAlternatively%!(PACKER_COMMA) if you upgrade your templates to HCL2%!(PACKER_COMMA) you can use 'packer init'\nwith a 'required_plugins' block to automatically install external plugins.\n\nYou can try HCL2 by running 'packer hcl2_upgrade\n/Users/oawoga/WORKSHOP/play/techbleat_bg/packer/packer.json'\n\n
-1700088213,,ui,say,==> amazon-ebs: Prevalidating any provided VPC information
-1700088213,,ui,say,==> amazon-ebs: Prevalidating AMI Name: packer_nginx 1700088212
-1700088213,,ui,message,    amazon-ebs: Found Image ID: ami-0e42de9d667b232f7
-1700088213,,ui,say,==> amazon-ebs: Creating temporary keypair: packer_65554994-68df-6bdf-9e8f-2407d0859407
-1700088214,,ui,say,==> amazon-ebs: Creating temporary security group for this instance: packer_65554996-2ec1-beda-9238-3f1dad419335
-1700088214,,ui,say,==> amazon-ebs: Authorizing access to port 22 from [0.0.0.0/0] in the temporary security groups...
-1700088215,,ui,say,==> amazon-ebs: Launching a source AWS instance...
-1700088216,,ui,message,    amazon-ebs: Instance ID: i-00a4209e96e058c00
-1700088216,,ui,say,==> amazon-ebs: Waiting for instance (i-00a4209e96e058c00) to become ready...
+1700089179,,ui,error,"../techbleat_bg/packer/packer.json": stat ../techbleat_bg/packer/packer.json: no such file or directory

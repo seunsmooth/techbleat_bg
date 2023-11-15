@@ -2,11 +2,11 @@
 sudo sh grafana_install.sh
 sudo sh prometheus_install.sh
 sudo apt-get install unzip
-sudo wget https://releases.hashicorp.com/packer/1.5.6/packer_1.5.6_linux_amd64.zip
-sudo unzip packer_1.5.6_linux_amd64.zip
+sudo wget https://github.com/hashicorp/packer-plugin-amazon/releases/download/v1.2.7/packer-plugin-amazon_v1.2.7_x5.0_linux_amd64.zip
+sudo unzip packer-plugin-amazon_v1.2.7_x5.0_linux_amd64.zip
 sudo mv packer /usr/local/bin/packer
-sudo wget https://releases.hashicorp.com/terraform/0.12.25/terraform_0.12.25_linux_amd64.zip
-sudo unzip terraform_0.12.25_linux_amd64.zip
+sudo wget https://releases.hashicorp.com/terraform/1.6.4/terraform_1.6.4_darwin_amd64.zip
+sudo unzip terraform_1.6.4_darwin_amd64.zip
 sudo mv terraform /usr/local/bin/
 sudo apt-get install -y ansible
 
