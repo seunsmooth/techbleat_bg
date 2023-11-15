@@ -1,0 +1,41 @@
+2023/11/11 13:55:21 [INFO] Packer version: 1.9.4 [go1.21.0 darwin amd64]
+2023/11/11 13:55:21 [TRACE] discovering plugins in 
+2023/11/11 13:55:21 [TRACE] discovering plugins in /usr/local/bin
+2023/11/11 13:55:21 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/11/11 13:55:21 [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/oawoga/.packerconfig
+2023/11/11 13:55:21 [WARN] Config file doesn't exist: /Users/oawoga/.packerconfig
+2023/11/11 13:55:21 [INFO] Setting cache directory: /Users/oawoga/.cache/packer
+2023/11/11 13:55:21 1699710921,,ui,say,Warning: Bundled plugins used\n\nThis template relies on the use of plugins bundled into the Packer binary.\nThe practice of bundling external plugins into Packer will be removed in an\nupcoming version.\n\nTo remove this warning and ensure builds keep working you can install these\nexternal plugins with the 'packer plugins install' command\n\n* packer plugins install github.com/hashicorp/amazon\n\nAlternatively%!(PACKER_COMMA) if you upgrade your templates to HCL2%!(PACKER_COMMA) you can use 'packer init'\nwith a 'required_plugins' block to automatically install external plugins.\n\nYou can try HCL2 by running 'packer hcl2_upgrade\n/Users/oawoga/WORKSHOP/play/techbleat_bg/packer/packer.json'\n\n
+2023/11/11 13:55:21 [INFO] Starting internal plugin packer-builder-amazon-ebs
+2023/11/11 13:55:21 Starting plugin: /usr/local/Cellar/packer/1.9.4/libexec/bin/packer []string{"/usr/local/Cellar/packer/1.9.4/libexec/bin/packer", "plugin", "packer-builder-amazon-ebs"}
+2023/11/11 13:55:21 Waiting for RPC address for: /usr/local/Cellar/packer/1.9.4/libexec/bin/packer
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: [INFO] Packer version: 1.9.4 [go1.21.0 darwin amd64]
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/oawoga/.packerconfig
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: [WARN] Config file doesn't exist: /Users/oawoga/.packerconfig
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: [INFO] Setting cache directory: /Users/oawoga/.cache/packer
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: args: []string{"packer-builder-amazon-ebs"}
+2023/11/11 13:55:21 Received unix RPC address for /usr/local/Cellar/packer/1.9.4/libexec/bin/packer: addr is /var/folders/xl/blrf_kd11yjbhk2j88gvs8v80000gn/T/packer-plugin115753738
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: Plugin address: unix /var/folders/xl/blrf_kd11yjbhk2j88gvs8v80000gn/T/packer-plugin115753738
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: Waiting for connection...
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: Serving a plugin connection...
+2023/11/11 13:55:21 [INFO] Starting internal plugin packer-provisioner-shell
+2023/11/11 13:55:21 Starting plugin: /usr/local/Cellar/packer/1.9.4/libexec/bin/packer []string{"/usr/local/Cellar/packer/1.9.4/libexec/bin/packer", "plugin", "packer-provisioner-shell"}
+2023/11/11 13:55:21 Waiting for RPC address for: /usr/local/Cellar/packer/1.9.4/libexec/bin/packer
+2023/11/11 13:55:21 packer-provisioner-shell plugin: [INFO] Packer version: 1.9.4 [go1.21.0 darwin amd64]
+2023/11/11 13:55:21 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/11/11 13:55:21 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/oawoga/.packerconfig
+2023/11/11 13:55:21 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /Users/oawoga/.packerconfig
+2023/11/11 13:55:21 packer-provisioner-shell plugin: [INFO] Setting cache directory: /Users/oawoga/.cache/packer
+2023/11/11 13:55:21 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2023/11/11 13:55:21 packer-provisioner-shell plugin: Plugin address: unix /var/folders/xl/blrf_kd11yjbhk2j88gvs8v80000gn/T/packer-plugin1345593677
+2023/11/11 13:55:21 packer-provisioner-shell plugin: Waiting for connection...
+2023/11/11 13:55:21 Received unix RPC address for /usr/local/Cellar/packer/1.9.4/libexec/bin/packer: addr is /var/folders/xl/blrf_kd11yjbhk2j88gvs8v80000gn/T/packer-plugin1345593677
+2023/11/11 13:55:21 packer-provisioner-shell plugin: Serving a plugin connection...
+2023/11/11 13:55:21 Preparing build: amazon-ebs
+2023/11/11 13:55:21 packer-builder-amazon-ebs plugin: [INFO] (aws): No AWS timeout and polling overrides have been set. Packer will default to waiter-specific delays and timeouts. If you would like to customize the length of time between retries and max number of retries you may do so by setting the environment variables AWS_POLL_DELAY_SECONDS and AWS_MAX_ATTEMPTS or the configuration options aws_polling_delay_seconds and aws_polling_max_attempts to your desired values.
+2023/11/11 13:55:21 1699710921,,ui,error,Error: Failed to prepare build: "amazon-ebs"\n\n1 error(s) occurred:\n\n* Bad script '../packer/scripts/install_software.sh': stat\n../packer/scripts/install_software.sh: no such file or directory\n\n
+2023/11/11 13:55:21 [INFO] (telemetry) Finalizing.
+2023/11/11 13:55:22 waiting for all plugin processes to complete...
+2023/11/11 13:55:22 /usr/local/Cellar/packer/1.9.4/libexec/bin/packer: plugin process exited
+2023/11/11 13:55:22 /usr/local/Cellar/packer/1.9.4/libexec/bin/packer: plugin process exited
